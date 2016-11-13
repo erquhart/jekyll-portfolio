@@ -12,7 +12,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 h1 {
-  font-size: 3.5em;
+  font-size: calc(2.5em + 1vw);
+  line-height: calc(1em + .7vw); }
+
+h2 {
+  font-size: calc(1.5 + 1vw);
   line-height: calc(1em + .7vw); }
 
 body {
@@ -27,3 +31,23 @@ body {
 
 .logo .bottom {
   fill: #235980; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
