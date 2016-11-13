@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
+
+@mixin primary-font($weight: 400, $style: normal){
+    font-family: 'Lato', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+@mixin secondary-font($weight:400, $style: normal) {
+    font-family: 'Delius Unicase', cursive;
+    font-style: $style;
+    font-weight: $weight;
+}
+$base-font: calc(18px + .5vw);
+$base-line-height: calc(1em + .7vw);
+
+body {
+    @include primary-font;
+    font-size: $base-font;
+    line-height: $base-line-height
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include secondary-font;
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: $base-line-height;
+}

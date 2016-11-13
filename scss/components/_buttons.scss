@@ -1,0 +1,32 @@
+$button-padding: 20px 40px;
+$button-font-color: #efefef;
+$button-background-color: tomato;
+$button-font-size: 1.2em;
+$transition-speed: .3s;
+$border-size: 2px;
+
+@mixin button-theme($bg-color, $color, $bg-hover: $color, $text-hover: $color, $border-color: $bg-color, $border-color-hover: $bg-hover) {
+    color: $color;
+    border-color: $color;
+    background-color: $bg-color;
+    border-color: $border-color;
+
+    &:hover {
+        color: $text-hover;
+        background-color: $bg-hover;
+        border-color: $border-color-hover;
+
+    }
+}
+
+%button {
+   display: inline-block;
+   box-sizing: border-box;
+   border-size: $border-size;
+   border-style: solid;
+   padding: $button-padding;
+   font-size: $button-font-size;
+   text-decoration: none;
+   transition: $transition-speed ease-out;
+
+}
