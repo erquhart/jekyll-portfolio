@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Rock+Salt" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+
+                {% include logo.html %}
+
+        </div>
+        </header>
+
+
+        <main class="container about">
+            {{ content }}
+        </main>
+
+
+
+        {% include project-list.html %}
+
+
+
+
+
+
+
+    <footer>
+        <main class="footer-logo">
+            {% include footer-logo.html %}
+        </main>
+    </footer>
+
+    </body>
+</html>
