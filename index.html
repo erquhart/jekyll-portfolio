@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Page Title</title>
-        <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Lato:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Rock+Salt" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
 
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -638,18 +642,49 @@
         </header>
 
 
-        <main class="container">
+        <main class="container about">
 
-            <h1>Howdy. My name is Bryan.</h1>
+            <h1 class="main-headline">Howdy. My name is Bryan.</h1>
 
-            <h2>I'm a designer and developer. It's nice to meet you!</h2>
+            <h2 class="secondary-headline">I'm a designer and developer. It's nice to meet you!</h2>
 
-            <p>I'm based in Memphis, Tenn., with my wife, son and two cats. </p>
+            <p>I live in Memphis, Tenn., with my wife, son and two cats. </p>
 
-            <p>I've been in the industry for over a decade now and have learned to embrace my passions when I find them. That's why I care strongly about web layout, modern CSS and building up the developer and designer communities around me.</p>
+            <p>I've been in the industry for over a decade now, and I have learned to embrace my professional passions. That's why I care strongly about new web layout, post-modern CSS and building up the developer and designer communities around me.</p>
+
+            <p class="actions"><a href="http://gorocketfuel.com" class="action">I work</a> <a href="http://bryanlrobinson.com/blog" class="action">I write</a> <a class="action" href="http://memphiswebworkers.com/podcast">I podcast</a> <a href="#" class="action">I present</a> <a class="action" href="http://hackmemphis.com">I organize</a></p>
 
         </main>
 
+        <section class="projects">
+            <h2 class="section-header">A small selection of projects</h2>
+            <article class="project">
+                <figure><img class="project_image" src="" alt=""></figure>
+                <main class="project_details">
+                    <h3 class="project_headline">Project Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat, enim lacinia scelerisque pellentesque, quam magna sodales felis, a egestas est tellus quis lectus. Morbi eget vehicula enim. Proin a molestie nibh, eu consequat magna. Morbi hendrerit iaculis dictum. Praesent congue est at tortor maximus, at condimentum justo sollicitudin. Donec ac scelerisque lorem. Cras fringilla ultrices elit vel luctus.
+
+</p>
+                    <a href="#" class="button primary">View the Project &raquo;</a>
+                </main>
+
+            </article>
+
+            <article class="project neutral">
+                <figure><img class="project_image" src="" alt=""></figure>
+                <main class="project_details">
+                    <h3 class="project_headline">Project Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat, enim lacinia scelerisque pellentesque, quam magna sodales felis, a egestas est tellus quis lectus. Morbi eget vehicula enim. Proin a molestie nibh, eu consequat magna. Morbi hendrerit iaculis dictum. Praesent congue est at tortor maximus, at condimentum justo sollicitudin. Donec ac scelerisque lorem. Cras fringilla ultrices elit vel luctus.
+
+</p>
+
+                    <a href="#" class="button">View the Project &raquo;</a>
+                </main>
+
+            </article>
+
+
+        </section>
 
 
 
@@ -666,7 +701,7 @@
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="73.293px" height="22.25px" viewBox="0 0 73.293 22.25" enable-background="new 0 0 73.293 22.25" xml:space="preserve">
 
-            <g>
+            <g class="top">
             	<path d="M26.412,4.16c-0.016,0.188-0.049,0.369-0.1,0.545s-0.109,0.35-0.176,0.521s-0.133,0.342-0.199,0.51
             		s-0.115,0.346-0.146,0.533h-0.047c-0.023,0-0.045,0.004-0.064,0.012s-0.041,0.02-0.064,0.035c0,0.008-0.002,0.016-0.006,0.023
             		s-0.006,0.016-0.006,0.023c0,0.031,0.006,0.059,0.018,0.082s0.018,0.043,0.018,0.059s-0.002,0.025-0.006,0.029
@@ -820,8 +855,8 @@
             		s0.133-0.219,0.188-0.328S49.451,4.754,49.451,4.629z"/>
             </g>
             <g>
-            	<path d="M17.574,21.072L1.361,11.778V10.21l16.213-9.202v2.307L3.736,11.017l13.837,7.703V21.072z"/>
-            	<path d="M55.719,18.72l13.838-7.703L55.719,3.314V1.008l16.213,9.202v1.568l-16.213,9.294V18.72z"/>
+            	<path class="angle" d="M17.574,21.072L1.361,11.778V10.21l16.213-9.202v2.307L3.736,11.017l13.837,7.703V21.072z"/>
+            	<path class="angle" d="M55.719,18.72l13.838-7.703L55.719,3.314V1.008l16.213,9.202v1.568l-16.213,9.294V18.72z"/>
             </g>
 
             </svg>

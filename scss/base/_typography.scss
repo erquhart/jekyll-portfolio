@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
-
 @mixin primary-font($weight: 400, $style: normal){
     font-family: 'Lato', sans-serif;
     font-style: $style;
     font-weight: $weight;
 }
 @mixin secondary-font($weight:400, $style: normal) {
-    font-family: 'Delius Unicase', cursive;
+    font-family: 'Rock Salt', cursive;
     font-style: $style;
     font-weight: $weight;
 }
@@ -19,15 +17,23 @@ body {
     line-height: $base-line-height
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @include secondary-font;
+h2, h3, h4, h5, h6 {
+
 }
 
 h1 {
-    font-size: calc(2.5em + 1vw);
+    @include secondary-font;
+    font-size: calc(1.3em + 2.5vw);
     line-height: $base-line-height;
+    margin-bottom: calc(.5em + .5vw);
+
 }
 h2 {
-    font-size: calc(1.5 + 1vw);
+    font-size: calc(1.6em + .5vw);
     line-height: $base-line-height;
+    margin-bottom: calc(.5em + .5vw);
+
+}
+p {
+    margin-bottom: calc(.5em + .5vw);
 }

@@ -1,13 +1,12 @@
 $button-padding: 20px 40px;
-$button-font-color: #efefef;
-$button-background-color: tomato;
+$button-font-color: $brand-neutral;
+$button-background-color: $brand-accent;
 $button-font-size: 1.2em;
 $transition-speed: .3s;
-$border-size: 2px;
+$border-size: 1px;
 
 @mixin button-theme($bg-color, $color, $bg-hover: $color, $text-hover: $color, $border-color: $bg-color, $border-color-hover: $bg-hover) {
     color: $color;
-    border-color: $color;
     background-color: $bg-color;
     border-color: $border-color;
 
@@ -22,11 +21,27 @@ $border-size: 2px;
 %button {
    display: inline-block;
    box-sizing: border-box;
-   border-size: $border-size;
+   border-radius: 3px;
+   border-width: $border-size;
    border-style: solid;
    padding: $button-padding;
    font-size: $button-font-size;
    text-decoration: none;
    transition: $transition-speed ease-out;
 
+}
+
+.button {
+    @extend %button;
+    @include button-theme(    $button-background-color, $button-font-color,
+                              $bg-hover: darken($button-background-color, 10%),
+                              $border-color: $button-font-color,
+                              $border-color-hover: $button-font-color);
+
+    &.primary {
+        @include button-theme(    $brand, $button-font-color,
+                                  $bg-hover: darken($brand, 10%),
+                                  $border-color: $button-font-color,
+                                  $border-color-hover: $button-font-color);
+    }
 }

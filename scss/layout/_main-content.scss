@@ -2,3 +2,27 @@
     width: 80%;
     margin: 0 auto;
 }
+h1, h2 {
+}
+%main-headlines {
+    text-align: center;
+}
+.main-headline {
+    @extend %main-headlines;
+    color: $brand;
+    margin-bottom: .8vw;
+}
+.secondary-headline {
+    @extend %main-headlines;
+    color: $brand-accent;
+}
+.section-header {
+    @extend %main-headlines;
+    @include secondary-font;
+    color: $brand;
+    font-size: calc(1em + 1vw);
+}
+
+.about {
+    padding: 70px 0;
+}

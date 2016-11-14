@@ -1,4 +1,50 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -6,31 +52,113 @@ body {
   font-size: calc(18px + .5vw);
   line-height: calc(1em + .7vw); }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Delius Unicase', cursive;
-  font-style: normal;
-  font-weight: 400; }
-
 h1 {
-  font-size: calc(2.5em + 1vw);
-  line-height: calc(1em + .7vw); }
+  font-family: 'Rock Salt', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1.3em + 2.5vw);
+  line-height: calc(1em + .7vw);
+  margin-bottom: calc(.5em + .5vw); }
 
 h2 {
-  font-size: calc(1.5 + 1vw);
-  line-height: calc(1em + .7vw); }
+  font-size: calc(1.6em + .5vw);
+  line-height: calc(1em + .7vw);
+  margin-bottom: calc(.5em + .5vw); }
+
+p {
+  margin-bottom: calc(.5em + .5vw); }
 
 body {
   background: #eff6e0;
   color: #3f3f3f; }
 
-.logo .angle {
+a {
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out; }
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 40px;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out; }
+
+.button {
+  color: #eff6e0;
+  background-color: #ed6a5a;
+  border-color: #eff6e0; }
+  .button:hover {
+    color: #eff6e0;
+    background-color: #e8402c;
+    border-color: #eff6e0; }
+  .button.primary {
+    color: #eff6e0;
+    background-color: #235980;
+    border-color: #eff6e0; }
+    .button.primary:hover {
+      color: #eff6e0;
+      background-color: #183d58;
+      border-color: #eff6e0; }
+
+.angle {
   fill: #ed6a5a; }
 
-.logo .top {
+.top {
   fill: #235980; }
 
-.logo .bottom {
+.bottom {
   fill: #235980; }
+
+.projects {
+  margin: 100px 0; }
+
+.project {
+  padding: calc(1rem + 2vw) 5%;
+  background-color: #5eb1bf; }
+  .project .project_headline {
+    color: #235980;
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 1rem; }
+  .project.neutral {
+    background-color: #dbebb8; }
+    .project.neutral .project_headline {
+      color: #ed6a5a; }
+  .project p {
+    -webkit-column-width: 500px;
+       -moz-column-width: 500px;
+            column-width: 500px; }
+  .project .button {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.action {
+  text-decoration: none;
+  display: block;
+  font-family: 'Rock Salt', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(1.3rem + .5vw);
+  color: #5eb1bf;
+  margin: 10px 20px 10px 0; }
+  .action::first-child {
+    margin-left: 0; }
+  .action:hover {
+    color: #ed6a5a; }
 
 .logo {
   display: -webkit-box;
@@ -40,14 +168,44 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.header {
+  padding: 30px 0; }
+
 .footer-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #183d58;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px; }
+  .footer-logo .top {
+    fill: #5eb1bf; }
 
 .container {
   width: 80%;
   margin: 0 auto; }
+
+.main-headline, .secondary-headline, .section-header {
+  text-align: center; }
+
+.main-headline {
+  color: #235980;
+  margin-bottom: .8vw; }
+
+.secondary-headline {
+  color: #ed6a5a; }
+
+.section-header {
+  font-family: 'Rock Salt', cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: #235980;
+  font-size: calc(1em + 1vw); }
+
+.about {
+  padding: 70px 0; }

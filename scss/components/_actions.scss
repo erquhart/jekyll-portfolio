@@ -1,0 +1,19 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.action {
+    text-decoration: none;
+    display: block;
+    @include secondary-font;
+    font-size: calc(1.3rem + .5vw);
+    color: $brand-light;
+    margin: 10px 20px 10px 0;
+    &::first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        color: $brand-accent;
+    }
+}

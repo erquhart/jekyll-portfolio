@@ -2,3 +2,7 @@ body {
     background: $brand-neutral;
     color: $dark-gray;
 }
+
+a {
+    transition: .5s ease-out;
+}

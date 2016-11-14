@@ -1,4 +1,12 @@
+
+
 .footer-logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: darken($brand, 10%);
+    align-items: center;
+    padding: 15px 20px;
+    .top {
+        fill: $brand-light;
+    }
 }
