@@ -33,6 +33,15 @@
 		"image": "/images/projects/tbox-logo.svg",
 		"url": "http://trophyboxcards.com"
 
+	},
+
+	{
+		"title": "E.W. Scripps",
+		"description": "<p>For two years, I worked at the E.W. Scripps Interactive Newspaper Group managing the front-end code for 13 newspaper websites. In this capacity, I oversaw the Django templates, two custom javascript libraries and a whole host of 3rd-party vendor integrations.</p>
+                        <p>While managing the front-end code base, I also worked on the visual design, information architecture and interaction design. I dipped my toes in user testing and helped all 13 news properties utilize their sites via a design framework that allowed them to customize the site, but stay within brand standards.</p>",
+		"image": "/images/projects/scripps-logo.jpg",
+		"url": "http://scripps.com"
+
 	}
 
 
