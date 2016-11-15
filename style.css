@@ -82,7 +82,7 @@ a {
   border-radius: 3px;
   border-width: 1px;
   border-style: solid;
-  padding: 20px 40px;
+  padding: 10px 60px;
   font-size: 1.2em;
   text-decoration: none;
   -webkit-transition: 0.3s ease-out;
@@ -120,6 +120,17 @@ a {
 .project {
   padding: calc(1rem + 2vw) 5%;
   background-color: #5eb1bf; }
+  .project_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .project .project_headline {
     text-align: center;
     color: #235980;
@@ -145,10 +156,13 @@ a {
             align-items: center; }
   .project .project_image {
     margin: 0 auto calc(1em + 1vw);
-    max-width: 30%; }
+    max-width: 30%;
+    min-width: 300px; }
   .project .button {
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 10px 100px; }
 
 .actions {
   display: -webkit-box;
