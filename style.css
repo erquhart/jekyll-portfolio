@@ -140,10 +140,11 @@ a {
     background-color: #dbebb8; }
     .project.neutral .project_headline {
       color: #ed6a5a; }
-  .project p {
+  .project .project_description {
     -webkit-column-width: 500px;
        -moz-column-width: 500px;
-            column-width: 500px; }
+            column-width: 500px;
+    margin-bottom: 20px; }
   .project figure {
     display: -webkit-box;
     display: -ms-flexbox;

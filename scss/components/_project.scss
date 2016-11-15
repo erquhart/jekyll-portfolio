@@ -21,8 +21,9 @@
             color: $brand-accent;
         }
     }
-    p {
+    .project_description {
         column-width: 500px;
+        margin-bottom: 20px;
     }
     figure {
         display: flex;
