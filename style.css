@@ -121,6 +121,7 @@ a {
   padding: calc(1rem + 2vw) 5%;
   background-color: #5eb1bf; }
   .project .project_headline {
+    text-align: center;
     color: #235980;
     font-size: calc(1.5rem + 1vw);
     margin-bottom: 1rem; }
@@ -132,6 +133,19 @@ a {
     -webkit-column-width: 500px;
        -moz-column-width: 500px;
             column-width: 500px; }
+  .project figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .project .project_image {
+    margin: 0 auto calc(1em + 1vw);
+    max-width: 30%; }
   .project .button {
     -ms-flex-item-align: end;
         align-self: flex-end; }

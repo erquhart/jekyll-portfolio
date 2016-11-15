@@ -3,6 +3,7 @@
 }
 .project {
     .project_headline {
+        text-align: center;
         color: $brand;
         font-size: calc(1.5rem + 1vw);
         margin-bottom: 1rem;
@@ -17,6 +18,16 @@
     }
     p {
         column-width: 500px;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project_headline {}
+    .project_image {
+        margin: 0 auto calc(1em + 1vw);
+        max-width: 30%;
     }
     .button {
         align-self: flex-end;
