@@ -1,4 +1,5 @@
 {% include header.html %}
+
         <header class="header">
             <div class="logo">
 
@@ -9,13 +10,12 @@
 
 
         <main class="container about">
-            {{ content }}
+            {{ content | markdownify }}
         </main>
 
 
-        {% include project-list.html %}
 
 
 
 
-        {% include footer.html %}
+{% include footer.html %}
