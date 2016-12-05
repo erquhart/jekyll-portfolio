@@ -2,4 +2,67 @@ $stripe-background-color: $brand-light;
 $stripe-background-secondary-color: darken($brand-neutral, 10%);
 $stripe-foreground-color: $brand;
 $stripe-foreground-secondary-color: $brand-accent;
-$stripe-padding: calc(1rem + 2vw) 5%;
+$stripe-padding: calc(1rem + 2vw) 10%;
+$stripe-font-vw: 1vw;
+$stripe-description-font-size: calc(0.6rem + #{$stripe-font-vw});
+$stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
+
+
+@mixin stripe-theme($background: $stripe-background-color, $foreground: $stripe-foreground-color) {
+    background-color: $background;
+
+    &_headline {
+        color: $foreground;
+
+    }
+    .button {
+        @include button-theme(    $foreground,
+                                  $bg-hover: darken($foreground, 10%),
+                                  $border-color: $button-font-color,
+                                  $border-color-hover: $button-font-color)
+    }
+}
+
+.stripe {
+    padding: $stripe-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_headline {
+        text-align: center;
+        color: $stripe-foreground-color;
+        font-size: $stripe-headline-font-size;
+        margin-bottom: 1rem;
+    }
+    &_description {
+        column-width: 500px;
+        margin-bottom: 20px;
+        & p {
+            font-size: $stripe-description-font-size;
+        }
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_image {
+        margin: 0 auto calc(1rem + 1vw);
+        max-width: 30%;
+        min-width: 300px;
+    }
+    .button {
+        align-self: center;
+    }
+}
+
+
+.stripe.primary {
+    @extend .stripe;
+    @include stripe-theme;
+}
+.stripe.neutral {
+    @extend .stripe;
+    @include stripe-theme($stripe-background-secondary-color, $stripe-foreground-secondary-color);
+}

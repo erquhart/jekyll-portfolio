@@ -165,6 +165,75 @@ a {
         align-self: center;
     padding: 10px 100px; }
 
+.stripe, .stripe.primary, .stripe.neutral {
+  padding: calc(1rem + 2vw) 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .stripe_headline {
+    text-align: center;
+    color: #235980;
+    font-size: calc(1.7rem + 1vw);
+    margin-bottom: 1rem; }
+  .stripe_description {
+    -webkit-column-width: 500px;
+       -moz-column-width: 500px;
+            column-width: 500px;
+    margin-bottom: 20px; }
+    .stripe_description p {
+      font-size: calc(0.6rem + 1vw); }
+  .stripe figure, .stripe.primary figure, .stripe.neutral figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .stripe_image {
+    margin: 0 auto calc(1rem + 1vw);
+    max-width: 30%;
+    min-width: 300px; }
+  .stripe .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+
+.primary.stripe {
+  background-color: #5eb1bf; }
+  .stripe.primary_headline {
+    color: #235980; }
+  .primary.stripe .button {
+    color: #eff6e0;
+    background-color: #235980;
+    border-color: #eff6e0; }
+    .primary.stripe .button:hover {
+      color: #eff6e0;
+      background-color: #183d58;
+      border-color: #eff6e0; }
+
+.neutral.stripe {
+  background-color: #dbebb8; }
+  .stripe.neutral_headline {
+    color: #ed6a5a; }
+  .neutral.stripe .button {
+    color: #eff6e0;
+    background-color: #ed6a5a;
+    border-color: #eff6e0; }
+    .neutral.stripe .button:hover {
+      color: #eff6e0;
+      background-color: #e8402c;
+      border-color: #eff6e0; }
+
 .actions {
   display: -webkit-box;
   display: -ms-flexbox;

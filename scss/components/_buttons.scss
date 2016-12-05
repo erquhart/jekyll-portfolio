@@ -5,7 +5,7 @@ $button-font-size: 1.2em;
 $transition-speed: .3s;
 $border-size: 1px;
 
-@mixin button-theme($bg-color, $color, $bg-hover: $color, $text-hover: $color, $border-color: $bg-color, $border-color-hover: $bg-hover) {
+@mixin button-theme($bg-color, $color:$brand-neutral, $bg-hover: $color, $text-hover: $color, $border-color: $bg-color, $border-color-hover: $bg-hover) {
     color: $color;
     background-color: $bg-color;
     border-color: $border-color;
