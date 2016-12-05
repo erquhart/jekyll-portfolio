@@ -1,13 +1,11 @@
 <section class="projects">
     <h2 class="section-header">A small selection of my projects</h2>
         {% for project in site.data.projects %}
-            <article class="project {% cycle 'neutral', '' %}">
-                <main class="project_details">
-                    <figure><img class="project_image" src="{{ project.image }}" alt="{{ project.title }}"></figure>
-                    <h3 class="project_headline">{{ project.title}}</h3>
-                    <div class="project_description">{{ project.description }}</div>
-                    <a href="{{ project.url }}" class="button primary">View the Site &raquo;</a>
-                </main>
+            <article class="stripe {% cycle 'neutral', 'primary' %}">
+                <figure><img class="stripe_image" src="{{ project.image }}" alt="{{ project.title }}"></figure>
+                <h3 class="stripe_headline">{{ project.title}}</h3>
+                <div class="stripe_description">{{ project.description }}</div>
+                <a href="{{ project.url }}" class="button primary">View the Site &raquo;</a>
             </article>
 
         {% endfor %}
