@@ -5,6 +5,14 @@ description: Layout in CSS is hard. We’ve spent the 2 decades since the incept
 categories: blog
 ---
 
+<style>
+    .interior img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
+
 Layout in CSS is hard. We’ve spent the 2 decades since the inception of CSS battling with its idea of how to lay out content on the web.
 
 When we moved from table-based layouts to CSS layouts with floats and positioning, we gained a LOT of flexibility, but we also lost things like vertical centering that tables afforded us.
@@ -40,3 +48,7 @@ Luckily we have a flex property to allow for our flex items to wrap, convenientl
 ![Flex can do some amazing things](/images/blog/flex-example-6.png)
 
 In the next Flexbox post I write, I’ll dig more into how we can have things wrap in new and exciting ways, but the defaults solve so many problems we’ve had over the years that it makes sense to try it out.
+
+If you're interested in trying things out, head over to [My Codepen collection](http://codepen.io/collection/nrkrew/ "Codepen collection on floats vs flex")
+
+<a href="http://codepen.io/collection/nrkrew/" class="button">See it in Action</a>
