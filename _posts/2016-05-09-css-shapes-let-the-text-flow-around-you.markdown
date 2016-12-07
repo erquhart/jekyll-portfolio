@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Bryan Robinson - Designer and Developer Strategist. Interested in layout and post-modern css.
-headline: Howdy. My name is Bryan.
-subhead: I'm a designer and developer. It's nice to meet you!
+title: First Blog Post
+description: I'm a designer and developer. It's nice to meet you!
 categories: blog
 ---
 
 
-# something
+# First Blog Post
 __something__
 
 
