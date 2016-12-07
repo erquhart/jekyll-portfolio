@@ -1,0 +1,8 @@
+<header class="post-head">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        {% if page.subhead %}<h2>{{ page.subhead }}</h2>{% endif %}
+
+        {% if page.date %}<h6 class="post-meta">Posted on {{ page.date | date:"%d %b, %Y" }}</h6>{% endif %}
+    </div>
+</header>

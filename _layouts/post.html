@@ -1,21 +1,17 @@
 {% include header.html %}
+    {% include interior-head.html %}
 
-        <header class="header">
-            <div class="logo">
-
-                {% include logo.html %}
-
-        </div>
-        </header>
+    <main class="interior">
 
 
-        <main class="container about">
+        {% include interior-content-head.html %}
+        <main class="container">
             {{ content | markdownify }}
         </main>
 
 
 
-
+    </main>
 
 
 {% include footer.html %}
