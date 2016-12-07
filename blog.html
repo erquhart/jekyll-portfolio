@@ -1,0 +1,14 @@
+---
+layout: interior
+title: Blog Posts
+---
+<section class="posts">
+
+{% for post in site.posts %}
+    <article class="stripe {% cycle 'neutral', 'primary' %}">
+        <time>{{ post.date | date:"%d %b" }}</time>
+        <h3 class="stripe_headline"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description }}</p>
+    </article>
+{% endfor %}
+</section>
