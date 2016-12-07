@@ -5,4 +5,13 @@ body {
 
 a {
     transition: .5s ease-out;
+    text-decoration: none;
+    color: $brand;
+    &:hover {
+        color: $brand-accent;
+    }
+}
+
+img {
+    max-width: 100%;
 }
