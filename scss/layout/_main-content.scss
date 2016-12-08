@@ -1,6 +1,9 @@
 .container {
     width: 80%;
     margin: 0 auto;
+    &-narrow {
+        max-width: 950px;
+    }
 }
 h1, h2 {
 }

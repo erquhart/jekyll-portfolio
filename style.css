@@ -422,6 +422,8 @@ img {
 .container {
   width: 80%;
   margin: 0 auto; }
+  .container-narrow {
+    max-width: 950px; }
 
 .main-headline, .secondary-headline, .section-header {
   text-align: center; }
