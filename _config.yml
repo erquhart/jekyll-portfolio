@@ -6,8 +6,12 @@ author_email: bryanlrobinson@gmail.com
 
 category_dir: /blog
 
-
 url: http://bryanlrobinson.com/
+
+collections:
+    experiments:
+        output: true
+        permalink: /experiments/:path/
 
 permalink: pretty
 
