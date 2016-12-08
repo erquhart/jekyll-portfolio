@@ -24,8 +24,10 @@ There’s a feeling you get walking around the roads of Italy, a feeling that yo
 
 The other issue we ran into with the roadways in Italy (mainly Rome and Florence) was navigation. The street signs, when they existed, were cement signs put on the sides of buildings. This definitely looked nice, but was very hard to see.
 
-![Street sign in Italy by Shauna Panczyszyn](/images/blog/italy-street-sign.jpg)
-<div class="caption">by Shauna Panczyszyn on https://nikkivillagomez.wordpress.com/2013/07/30/wayfinding-madness/</div>
+<div class="captioned">
+    <img src="/images/blog/italy-street-sign.jpg" alt="Street sign in Italy by Shauna Panczyszyn" class="captioned">
+    <div class="caption">by Shauna Panczyszyn on https://nikkivillagomez.wordpress.com/2013/07/30/wayfinding-madness/</div>
+</div>
 
 These signs fade into the background of most buildings on which they reside. It took us a couple days to get used to it, and even then it made finding our way around incredibly difficult.
 

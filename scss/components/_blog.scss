@@ -27,3 +27,16 @@
         font-size: 1.4rem;
     }
 }
+
+.captioned {
+    width: 80%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+.caption {
+    font-size: calc(.5rem + .5vw);
+    font-style: italic;
+    margin-bottom: 10px;
+}

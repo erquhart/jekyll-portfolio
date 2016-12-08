@@ -606,6 +606,17 @@ img {
   .post-head h6 {
     font-size: 1.4rem; }
 
+.captioned {
+  width: 80%;
+  margin: 0 auto; }
+  .captioned img {
+    width: 100%; }
+
+.caption {
+  font-size: calc(.5rem + .5vw);
+  font-style: italic;
+  margin-bottom: 10px; }
+
 .interior h1 {
   font-size: 3rem;
   text-align: center; }
