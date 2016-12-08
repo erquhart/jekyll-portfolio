@@ -11,9 +11,15 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
 @mixin stripe-theme($background: $stripe-background-color, $foreground: $stripe-foreground-color) {
     background-color: $background;
 
-    &_headline {
+    .stripe_headline {
         color: $foreground;
 
+    }
+    a {
+        color: $foreground;
+        &:hover {
+            color: darken($foreground, 15%);
+        }
     }
     .button {
         @include button-theme(    $foreground,
@@ -34,6 +40,7 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
         color: $stripe-foreground-color;
         font-size: $stripe-headline-font-size;
         margin-bottom: 1rem;
+
     }
     &_description {
         column-width: 500px;
