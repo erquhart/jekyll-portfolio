@@ -322,6 +322,10 @@ h2 {
 p {
   margin-bottom: calc(.5em + .5vw); }
 
+.subhead {
+  font-size: calc(1.5rem + .5vw);
+  text-align: center; }
+
 body {
   background: #eff6e0;
   color: #3f3f3f; }
@@ -330,9 +334,9 @@ a {
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
   text-decoration: none;
-  color: #235980; }
+  color: #ed6a5a; }
   a:hover {
-    color: #ed6a5a; }
+    color: #235980; }
 
 img {
   max-width: 100%; }
