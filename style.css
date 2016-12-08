@@ -320,7 +320,7 @@ h2 {
   margin-bottom: calc(.5em + .5vw); }
 
 p {
-  margin-bottom: calc(.5em + .5vw); }
+  margin-bottom: calc(1rem + .3vw); }
 
 .subhead {
   font-size: calc(1.5rem + .5vw);
