@@ -6,6 +6,11 @@ author_email: bryanlrobinson@gmail.com
 
 category_dir: /blog
 
+collections:
+    presentations:
+        output: true
+        permalink: /speaking/:path/
+
 
 url: http://bryanlrobinson.com/
 
