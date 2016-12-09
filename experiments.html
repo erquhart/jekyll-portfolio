@@ -1,0 +1,16 @@
+---
+layout: interior
+title: Experiments in HTML and CSS
+---
+<section class="posts">
+
+{% for experiment in site.experiments %}
+    <article class="stripe {% cycle 'neutral', 'primary' %}">
+        <h3 class="stripe_headline"><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
+        <div class="stripe_description">
+            <p>{{ experiment.description }}</p>
+            <a href="{{ experiment.url }}" title="{{ experiment.title }}">Read More &raquo;</a>
+        </div>
+    </article>
+{% endfor %}
+</section>
