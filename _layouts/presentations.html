@@ -1,0 +1,26 @@
+{% include header.html %}
+    {% include interior-head.html %}
+
+    <main class="interior">
+
+
+        {% include interior-content-head.html %}
+        <main class="container container-narrow">
+            {{ content | markdownify }}
+        </main>
+
+    </main>
+
+
+    <div class="container container-narrow"><h2 class="section-header">Presentations and Resources</h2></div>
+    {% for presentation in site.presentations %}
+    <article class="stripe {% cycle 'neutral', 'primary' %}">
+        <h3 class="stripe_headline"><a href="{{ presentation.url }}">{{ presentation.title }}</a></h3>
+        <div class="stripe_description">
+            <p>{{ presentation.description }}</p>
+            <a href="{{ presentation.url }}" title="{{ presentation.title }}">Read More &raquo;</a>
+        </div>
+    </article>
+    {% endfor %}
+
+{% include footer.html %}
