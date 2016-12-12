@@ -2,7 +2,7 @@
 layout: post
 title: The True Gift of Your Former Code
 description: I’m not in the same league as most developers I have the pleasure of meeting, but I had been pretty proud of the little Django app I put together for my old portfolio site. It worked pretty well. I had loads of plans for it when I made it — none of which came to fruition. In the end, it served it’s purpose and I learned a lot in the process.
-categories: blog
+categories: Development
 ---
 
 I’m not in the same league as most developers I have the pleasure of meeting, but I had been pretty proud of the little Django app I put together for my old portfolio site.
