@@ -646,6 +646,9 @@ img {
   font-style: italic;
   margin-bottom: 10px; }
 
+.comments {
+  margin-bottom: calc(2rem + .5vw); }
+
 .interior h1 {
   font-size: 3rem;
   text-align: center; }

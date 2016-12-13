@@ -28,5 +28,9 @@
     </main>
 
 
+    {% if page.collection == "presentations" %}
+        {% include presentation-list.html %}
+    {% endif %}
+
 
 {% include footer.html %}
