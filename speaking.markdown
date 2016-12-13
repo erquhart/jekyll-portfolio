@@ -2,6 +2,7 @@
 layout: presentations
 title: I Present
 comments: "off"
+permalink: /speaking/
 ---
 
 
