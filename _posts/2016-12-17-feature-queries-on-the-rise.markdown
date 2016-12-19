@@ -13,13 +13,13 @@ categories: Design
     }
 </style>
 
-Since the Web became a more beautiful place with the advent of CSS, there’s always been a struggle in the use of more modern features of CSS with browsers who are either slower to adopt or more cautious in the way the implement features.
+Since the Web became a more beautiful place with the advent of CSS, there’s always been a struggle in the use of more modern features of CSS with browsers which are either slower to adopt or more cautious in the way the implement features.
 
 There have been many potential solutions for this issue.
 
-First, baked directly into the CSS specification and the browser implementations is the fact that if a browser doesn’t understand a property, it will ignore it. This instead of sending the user an error. This silent fail means we can progressively enhance web applications without worrying about unsightly error messages being displayed.
+First, baked directly into the CSS specification and the browser implementations is the fact that if a browser doesn’t understand a property, it will ignore it. This, instead of sending the user an error. Silently failing means we can progressively enhance web applications without worrying about unsightly error messages being displayed.
 
-Then, Internet Explorer — a long-time culprit of compatibility issues — implemented the idea of conditional stylesheets. You could now build your site the way you wanted and when things broke (such as z-index in IE7 or float and width issues in IE6) you could specify fixes for them in stylesheets only accessible by those specific versions of Internet Explorer. [View more examples on CSS Tricks](https://css-tricks.com/how-to-create-an-ie-only-stylesheet/)
+Then, Internet Explorer — a long-time culprit of compatibility issues — implemented the idea of conditional stylesheets. You could now build your site the way you wanted it and when things broke (such as z-index in IE7 or float and width issues in IE6) you could specify fixes for them in stylesheets only accessible by those specific versions of Internet Explorer. [View more examples on CSS Tricks](https://css-tricks.com/how-to-create-an-ie-only-stylesheet/)
 
 {% highlight html linenos %}
 <!-- Main CSS -->
@@ -37,7 +37,7 @@ Then, Internet Explorer — a long-time culprit of compatibility issues — impl
 
 {% endhighlight %}
 
-Then, in 2009, came the Modernizr javascript library by Faruk Ates. This was a huge step forward in allowing you to target features not browsers in your code.
+Then, in 2009, came [the Modernizr javascript library by Faruk Ates](https://modernizr.com/). This was a huge step forward in allowing you to target features not browsers in your code.
 
 The Modernizr library uses User Agent “sniffing” to find out what a user’s browser is capable of and then provides that information in a few ways for the developer to access. A dev can utilize the library in their javascript to test both CSS features and JS features. Modernizr also can provide your application with features dumped out in a string of class names on the <html> element on the page. Meaning your css can target browsers that support flexbox or browsers that DON’T support flexbox in new and powerful ways.
 
@@ -63,11 +63,11 @@ The syntax is relatively easy:
 {% endhighlight %}
 
 
-Here’s a concrete example using CSS Grid — an amazing new layout property that isn’t in even modern browsers until March or April 2017.
+Here’s a concrete example using CSS Grid &emdash; an amazing new layout property that isn’t in even modern browsers until March or April 2017.
 
 ## No Feature Query
 
-Here's what the example looks like with no feature query. If you're in a browser that supports Grid Layout &emdash; which you're probably not &emdash; then you'll see a great grid layout. If you're not, you'll see full-width ```display: block; ``` divs with images with no explanation.
+Here's what the example looks like with no feature query. If you're in a browser that supports Grid Layout &emdash; which you're probably not &emdash; then you'll see a great grid layout. If you're not, you'll see full-width block-level divs with images with no explanation.
 
 <iframe style="width: 120%; margin-left: -10%;" height='500' scrolling='no' title='CSS Grid Example - No Feature Query' src='//codepen.io/brob/embed/ENwbPK/?height=500&theme-id=26704&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='http://codepen.io/brob/pen/ENwbPK/'>CSS Grid Example - No Feature Query</a> by Bryan Robinson (<a href='http://codepen.io/brob'>@brob</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
