@@ -8,6 +8,12 @@
     font-style: $style;
     font-weight: $weight;
 }
+em {
+    @include primary-font($style: italic);
+}
+strong {
+    @include primary-font($style: bold);
+}
 $base-font: calc(18px + .5vw);
 $base-line-height: calc(1em + .7vw);
 

@@ -87,3 +87,5 @@ This way you get a nice layout either way and for those that have enabled the us
 There are loads of methods for progressively enhancing your site, but CSS Feature Queries are by far one of the cleanest ways of doing it that we’ve ever had.
 
 You can view all three codepens together in my [CodePen Feature Query Collection](http://codepen.io/collection/DdpPGk/)
+
+*If you have any questions, I'd be more than happy to answer in the comments or [on Twitter](http://twitter.com/brob/).*
