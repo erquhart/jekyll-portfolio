@@ -1,7 +1,9 @@
 {
   "name": "awesome",
   "version": "1.0.0",
-  "engines" : { "node" : "^5.10.1" },
+  "engines": {
+    "node": "^5.10.1"
+  },
   "dependencies": {
     "surge": "^0.18",
     "browser-sync": "^2.13.0",
@@ -11,5 +13,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-watch": "^4.3.9"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.9.1"
   }
 }
