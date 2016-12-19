@@ -63,11 +63,11 @@ The syntax is relatively easy:
 {% endhighlight %}
 
 
-Here’s a concrete example using CSS Grid &emdash; an amazing new layout property that isn’t in even modern browsers until March or April 2017.
+Here’s a concrete example using CSS Grid -- an amazing new layout property that isn’t in even modern browsers until March or April 2017.
 
 ## No Feature Query
 
-Here's what the example looks like with no feature query. If you're in a browser that supports Grid Layout &emdash; which you're probably not &emdash; then you'll see a great grid layout. If you're not, you'll see full-width block-level divs with images with no explanation.
+Here's what the example looks like with no feature query. If you're in a browser that supports Grid Layout -- which you're probably not -- then you'll see a great grid layout. If you're not, you'll see full-width block-level divs with images with no explanation.
 
 <iframe style="width: 120%; margin-left: -10%;" height='500' scrolling='no' title='CSS Grid Example - No Feature Query' src='//codepen.io/brob/embed/ENwbPK/?height=500&theme-id=26704&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='http://codepen.io/brob/pen/ENwbPK/'>CSS Grid Example - No Feature Query</a> by Bryan Robinson (<a href='http://codepen.io/brob'>@brob</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
