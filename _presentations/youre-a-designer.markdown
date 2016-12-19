@@ -1,7 +1,13 @@
 ---
-layout: post
 title: You're a Designer; I promise
-description: Too many developers think they can never learn to design. While it may be true that you'll never be a master graphic artist, there are tons of tips and tricks to make sure your application or website looks professionally designed. In this talk, we'll cover the basics of good design, view examples of both good and bad design and discuss how to incorporate design thinking into your development process. Attendees will walk away with practical knowledge to start applying to current and future projects.
+layout: post
+description: Too many developers think they can never learn to design. While it may
+  be true that you'll never be a master graphic artist, there are tons of tips and
+  tricks to make sure your application or website looks professionally designed. In
+  this talk, we'll cover the basics of good design, view examples of both good and
+  bad design and discuss how to incorporate design thinking into your development
+  process. Attendees will walk away with practical knowledge to start applying to
+  current and future projects.
 ---
 
 ![Photo from CodeStock 2015](/images/speaking/codestock-youre-a-designer.jpg) &#42; Too many developers think they can never learn to design. While it may be true that you'll never be a master graphic artist, there are tons of tips and tricks to make sure your application or website looks professionally designed.

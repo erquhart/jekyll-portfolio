@@ -1,10 +1,9 @@
 ---
-layout: presentations
 title: I Present
-comments: "off"
-permalink: /speaking/
+permalink: "/speaking/"
+layout: presentations
+comments: 'off'
 ---
-
 
 ## Invite me to speak at your conference
 

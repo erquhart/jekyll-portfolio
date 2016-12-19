@@ -1,8 +1,16 @@
 ---
-layout: post
 title: Flexbox -- Let's start simple
-description: Layout in CSS is hard. We’ve spent the 2 decades since the inception of CSS battling with its idea of how to lay out content on the web. When we moved from table-based layouts to CSS layouts with floats and positioning, we gained a LOT of flexibility, but we also lost things like vertical centering that tables afforded us. Floats and positioning got us a long way to making really nice looking sites, but with the advent of responsive design and fluid layouts, the struggle has been real...
-categories: Development
+date: 2016-05-02 00:00:00 Z
+categories:
+- Development
+layout: post
+description: Layout in CSS is hard. We’ve spent the 2 decades since the inception
+  of CSS battling with its idea of how to lay out content on the web. When we moved
+  from table-based layouts to CSS layouts with floats and positioning, we gained a
+  LOT of flexibility, but we also lost things like vertical centering that tables
+  afforded us. Floats and positioning got us a long way to making really nice looking
+  sites, but with the advent of responsive design and fluid layouts, the struggle
+  has been real...
 ---
 
 <style>

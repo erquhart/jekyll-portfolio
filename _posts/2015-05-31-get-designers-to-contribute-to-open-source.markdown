@@ -1,9 +1,15 @@
 ---
-layout: post
 title: How to Get Designers to Contribute in Open Source
+date: 2015-05-31 00:00:00 Z
+categories:
+- Design
+layout: post
 subhead: One small step toward the inclusion of designers in our OSS world
-description: I’ve been thinking a decent bit this year about how to get designers involved in Open Source projects. There’s more and more being talked about in this vein, and I don’t plan on rehashing what they talked about (The Intimidation Barrier and Open Source Design by Una Cravats and one of the first guiding documents -- The Open Source Design Manifesto by Garth Braithwaite to name but a couple).
-categories: Design
+description: I’ve been thinking a decent bit this year about how to get designers
+  involved in Open Source projects. There’s more and more being talked about in this
+  vein, and I don’t plan on rehashing what they talked about (The Intimidation Barrier
+  and Open Source Design by Una Cravats and one of the first guiding documents --
+  The Open Source Design Manifesto by Garth Braithwaite to name but a couple).
 ---
 
 I’ve been thinking a decent bit this year about how to get designers involved in Open Source projects. There’s more and more being talked about in this vein, and I don’t plan on rehashing what they talked about ([The Intimidation Barrier](http://opendesign.foundation/articles/barriers-for-designers/) and [Open Source Design](http://una.im/open-source-design) by Una Kravets and one of the first guiding documents: [The Open Source Design Manifesto by Garth Braithwaite](http://opendesign.foundation/articles/the-open-source-design-manifesto/) to name but a couple).

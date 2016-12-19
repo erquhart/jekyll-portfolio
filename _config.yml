@@ -1,25 +1,33 @@
-name: Bryan Robinson - Design Strategist and Front-end Developer
-
-author: Bryan Robinson
-
-author_email: bryanlrobinson@gmail.com
-
+---
+title: Jekyll Portfolio
+timezone: UTC
 collections:
-    presentations:
-        output: true
-        permalink: /speaking/:path/
-    experiments:
-        output: true
-        permalink: /experiments/:path/
-
+  experiments:
+    title: Experiments
+    output: true
+    permalink: "/experiments/:path/"
+  posts:
+    title: Posts
+    output: true
+  presentations:
+    title: Presentations
+    output: true
+    permalink: "/speaking/:path/"
+  uploads:
+    title: Uploads
+    output: true
+name: Bryan Robinson - Design Strategist and Front-end Developer
+author: Bryan Robinson
+author_email: bryanlrobinson@gmail.com
 url: http://bryanlrobinson.com/
-
-permalink: /blog/:year/:month/:day/:title/
-
+permalink: "/blog/:year/:month/:day/:title/"
 markdown: kramdown
-
 highlight_options:
   linenos: true
-
-
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+- README.markdown
+- package.json
+- grunt.js
+- Gruntfile.js
+- Gruntfile.coffee
+- node_modules

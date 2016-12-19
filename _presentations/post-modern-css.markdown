@@ -1,7 +1,10 @@
 ---
-layout: post
 title: Post-Modern CSS
-description: CSS has changed. It’s moving away from the mired mess of it’s origin and toward a bright future of interesting layout and easy design. If you’ve been focused on other important skills in the past 3 years, you’ve missed out on a lot of new, helpful techniques.
+layout: post
+description: CSS has changed. It’s moving away from the mired mess of it’s origin
+  and toward a bright future of interesting layout and easy design. If you’ve been
+  focused on other important skills in the past 3 years, you’ve missed out on a lot
+  of new, helpful techniques.
 ---
 
 CSS has changed. It’s moving away from the mired mess of it’s origin and toward a bright future of interesting layout and easy design.

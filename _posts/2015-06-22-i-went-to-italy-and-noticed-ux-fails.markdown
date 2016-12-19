@@ -1,8 +1,13 @@
 ---
-layout: post
 title: I went to Italy and noticed UX fails
-description: Ciao friends! I’m just arriving back in the States from a trip to Italy. I’m not exactly much of a world traveller, but a good time was had. While I enjoyed the majority of what I saw, I also observed a few major usability fails that I wanted to bring up. Give the blog a little international flair.
-categories: Design
+date: 2015-06-22 00:00:00 Z
+categories:
+- Design
+layout: post
+description: Ciao friends! I’m just arriving back in the States from a trip to Italy.
+  I’m not exactly much of a world traveller, but a good time was had. While I enjoyed
+  the majority of what I saw, I also observed a few major usability fails that I wanted
+  to bring up. Give the blog a little international flair.
 ---
 
 Ciao friends! I’m just arriving back in the States from a trip to Italy. I’m not exactly much of a world traveller, but a good time was had. While I enjoyed the majority of what I saw, I also observed a few major usability fails that I wanted to bring up. Give the blog a little international flair.

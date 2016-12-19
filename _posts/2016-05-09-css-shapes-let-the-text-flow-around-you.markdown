@@ -1,11 +1,14 @@
 ---
-layout: post
 title: CSS Shapes — Let the Text Flow Around You
-description: There’s magic in the air around CSS right now. There’s so much new to be excited about. One simple thing that you should get excited about is the CSS Shapes Module. These are not CSS shapes like building triangles out of border property hacks. This is taking your content and shaping it around shapes and images.
-categories: Design
+date: 2016-05-09 00:00:00 Z
+categories:
+- Design
+layout: post
+description: There’s magic in the air around CSS right now. There’s so much new to
+  be excited about. One simple thing that you should get excited about is the CSS
+  Shapes Module. These are not CSS shapes like building triangles out of border property
+  hacks. This is taking your content and shaping it around shapes and images.
 ---
-
-
 
 There’s magic in the air around CSS right now. There’s so much new to be excited about. One simple thing that you should get excited about is the CSS Shapes Module.
 
