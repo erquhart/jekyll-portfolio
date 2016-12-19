@@ -17,9 +17,9 @@ Since the Web became a more beautiful place with the advent of CSS, there’s al
 
 There have been many potential solutions for this issue.
 
-First, baked directly into the CSS specification and the browser implementations is the fact that if a browser doesn’t understand a property, it will ignore it. This, instead of sending the user an error. Silently failing means we can progressively enhance web applications without worrying about unsightly error messages being displayed.
+First, baked directly into the CSS specification and the browser implementations is the fact that if a browser doesn’t understand a property, it will ignore it instead of sending the user an error. Silently failing means we can progressively enhance web applications without worrying about unsightly error messages being displayed.
 
-Then, Internet Explorer — a long-time culprit of compatibility issues — implemented the idea of conditional stylesheets. You could now build your site the way you wanted it and when things broke (such as z-index in IE7 or float and width issues in IE6) you could specify fixes for them in stylesheets only accessible by those specific versions of Internet Explorer. [View more examples on CSS Tricks](https://css-tricks.com/how-to-create-an-ie-only-stylesheet/)
+Then, Internet Explorer — a long-time culprit of compatibility issues — implemented the idea of conditional stylesheets. You could now build your site the way you wanted it and when things broke (such as z-index in IE7 or float and width issues in IE6) you could specify fixes for them in stylesheets only accessible by those specific versions of Internet Explorer. This means we can gracefully degrade the experience for out-of-date browsers [View more examples on CSS Tricks](https://css-tricks.com/how-to-create-an-ie-only-stylesheet/)
 
 {% highlight html linenos %}
 <!-- Main CSS -->
