@@ -5,6 +5,14 @@ description: Since the Web became a more beautiful place with the advent of CSS,
 categories: Design
 ---
 
+<style>
+    .highlight {
+        width: 120%;
+        margin-left: -10%;
+        margin-bottom: 15px;
+    }
+</style>
+
 Since the Web became a more beautiful place with the advent of CSS, there’s always been a struggle in the use of more modern features of CSS with browsers who are either slower to adopt or more cautious in the way the implement features.
 
 There have been many potential solutions for this issue.
