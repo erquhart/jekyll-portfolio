@@ -744,7 +744,7 @@ img {
         -ms-flex-item-align: start;
             -ms-grid-row-align: start;
             align-self: start;
-        border: 1px dotted;
+        border: 1px dashed;
         padding: 10px;
         box-sizing: border-box;
         margin-bottom: calc(1rem + .3vw); }
