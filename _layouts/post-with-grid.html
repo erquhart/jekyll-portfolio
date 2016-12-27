@@ -7,23 +7,26 @@
         {% include interior-content-head.html %}
         <main class="post">
             {{ content | markdownify }}
+
+            {% unless page.comments == "off" %}
+                <aside class="reference">
+                    <h2>Leave a Comment</h2>
+                    <p>If you've got a question or feedback on this post, leave it in the comments and I'll get back to you or <a href="http://twitter.com/brob/">message me on Twitter</a></p>
+                </aside>
+                <p id="disqus_thread"></p>
+
+            <script>
+                var disqus_shortname = 'bryanrobinson';
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            {% endunless %}
         </main>
-        {% unless page.comments == "off" %}
 
-        <aside class="comments container container-narrow">
-            <div id="disqus_thread"></div>
-        </aside>
-
-        <script>
-            var disqus_shortname = 'bryanrobinson';
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        {% endunless %}
 
     </main>
 

@@ -58,7 +58,7 @@ $column-paddings: ($column-padding * $column-number);
     @media (min-width: $grid-width) {
         width: 70%;
         @supports (display: grid) {
-            margin: 20px;
+            margin: calc(2rem + .5vw);
             width: auto;
 
             p {
@@ -76,7 +76,7 @@ $column-paddings: ($column-padding * $column-number);
 
         .reference {
             align-self: start;
-            border: 1px dotted;
+            border: 1px dashed;
             padding: 10px;
             box-sizing: border-box;
             margin-bottom: calc(1rem + .3vw);
