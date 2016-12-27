@@ -594,7 +594,8 @@ img {
     text-align: center;
     color: #235980;
     font-size: calc(1.7rem + 1vw);
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    line-height: calc(1.2em + .5vw); }
   .stripe_description {
     -webkit-column-width: 500px;
        -moz-column-width: 500px;
