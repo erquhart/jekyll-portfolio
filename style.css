@@ -731,7 +731,7 @@ img {
       grid-column-gap: 30px; }
       @supports ((display: -ms-grid) or (display: grid)) {
         .post {
-          margin: 20px;
+          margin: calc(2rem + .5vw);
           width: auto; }
           .post p {
             margin: 0; } }
