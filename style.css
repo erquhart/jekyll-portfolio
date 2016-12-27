@@ -740,6 +740,14 @@ img {
         -ms-grid-column-span: 3;
         -ms-grid-column: 3;
             grid-column: 3 / span 3; }
+      .post .reference {
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
+            align-self: start;
+        border: 1px dotted;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: calc(1rem + .3vw); }
       .post aside {
         -ms-grid-column: span 2;
             grid-column: span 2;
@@ -747,24 +755,17 @@ img {
         -ms-flex-item-align: start;
             -ms-grid-row-align: start;
             align-self: start; }
+        .post aside p {
+          margin: 0;
+          text-align: center; }
         @supports ((display: -ms-grid) or (display: grid)) {
           .post aside p {
             font-size: calc(.7rem + .5vw);
-            line-height: 1.2em; }
+            line-height: 1.2em;
+            text-align: left; }
           .post aside h2 {
             font-size: calc(1.2rem + .5vw);
             text-transform: uppercase; } } }
-  .post .reference {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    border: 1px dotted;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: calc(1rem + .3vw); }
-    .post .reference p {
-      margin: 0;
-      text-align: center; }
   .post .highlight, .post iframe {
     width: 100%;
     margin: 0 0 20px; }
