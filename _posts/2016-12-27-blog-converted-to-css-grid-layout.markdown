@@ -37,7 +37,8 @@ I won't dive into too many details, but here's a snippet of the CSS I'm using to
 
 {% highlight css linenos %}
 .post {
-    /* Sets this to be a grid, defines the columns and adds margin between rows */
+    /* Sets this to be a grid,
+    defines the columns and adds margin between rows */
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -46,16 +47,17 @@ I won't dive into too many details, but here's a snippet of the CSS I'm using to
 
 .post > p, .post > iframe, .post > .highlight {
     /* Sets my blog content to span the last 3 columns
-    (using > p instead of a class to make my life easy with markdown) */
+    (using > p instead of a class
+    to make my life easy with markdown) */
 
     width: 100%;
     grid-column: 3 / span 3;
 }
 
 aside {
-    /* Sets asides to start at the first column line and span 2 columns */
+    /* Sets asides to start at the first column line
+    and spans the aside 2 columns */
     grid-column: span 2;
-
 }
 
 {% endhighlight %}
