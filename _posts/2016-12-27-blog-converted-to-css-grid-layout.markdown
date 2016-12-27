@@ -19,15 +19,17 @@ The layout of the pages inspired me. I knew that I wanted to give a quick update
 
 To do this, I decided to convert my blog posts to CSS Grid Layout.
 
+With the release of this blog post, I'm also releasing the updated code into the wild.
+
 <aside class="reference">
     <p>If you're looking at this and all you see is a centered column, your browser doesn't support Grid yet. <a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid">Find out how to enable Grid to see this as intended</a>.</p>
 </aside>
 
-With the release of this blog post, I'm also releasing the updated code into the wild.
-
 This is a super simple implementation and doesn't look quite right in the Firefox Developer build, due to height bugs, but it's really nice in other experimental browsers -- such as Chrome with the experimental flag checked.
 
-I won't dive into too many details, but here's a snippet of the CSS I'm using to accomplish this layout.
+I've only converted one other blog post to the new layout at this point. Fittingly, it's my post on [Grid and Feature Queries](/blog/2016/12/17/feature-queries-on-the-rise/).
+
+I won't dive into too many details, but here's a snippet of some of the CSS I'm using to accomplish this layout.
 
 <aside class="reference">
 
