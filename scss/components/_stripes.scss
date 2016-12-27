@@ -40,6 +40,7 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
         color: $stripe-foreground-color;
         font-size: $stripe-headline-font-size;
         margin-bottom: 1rem;
+        line-height: calc(1.2em + .5vw);
 
     }
     &_description {

@@ -1,3 +1,7 @@
+$grid-width: 800px;
+
+
+
 .date {
     font-style: italic;
     font-size: calc(1rem + .5vw);
@@ -42,4 +46,69 @@
 }
 .comments {
     margin-bottom: calc(2rem + .5vw);
+}
+
+$column-number: 5;
+$column-padding: 30px;
+$column-paddings: ($column-padding * $column-number);
+.post {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $grid-width) {
+        width: 70%;
+        @supports (display: grid) {
+            margin: 20px;
+            width: auto;
+
+            p {
+                margin: 0;
+            }
+        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: calc(.8rem + .5vw);
+        grid-column-gap: $column-padding;
+        > p, iframe, .highlight {
+            width: 100%;
+            grid-column: 3 / span 3;
+        }
+
+        .reference {
+            align-self: start;
+            border: 1px dotted;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: calc(1rem + .3vw);
+
+        }
+        aside {
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            grid-column: span 2;
+            text-align: left;
+            align-self: start;
+
+            @supports (display: grid) {
+                p {
+                    font-size: calc(.7rem + .5vw);
+                    line-height: 1.2em;
+                    text-align: left;
+                }
+                h2 {
+                    font-size: calc(1.2rem + .5vw);
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+    }
+
+
+    .highlight, iframe {
+        width: 100%;
+        margin: 0 0 20px;
+    }
 }
