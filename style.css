@@ -741,8 +741,9 @@ img {
         -ms-grid-column: 3;
             grid-column: 3 / span 3; }
       .post aside {
-        -ms-grid-column: span 2;
-            grid-column: span 2;
+        -ms-grid-column-span: 2;
+        -ms-grid-column: 1;
+            grid-column: 1 / span 2;
         text-align: left;
         -ms-flex-item-align: start;
             -ms-grid-row-align: start;

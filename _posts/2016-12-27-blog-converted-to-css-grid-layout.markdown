@@ -63,3 +63,18 @@ aside {
 }
 
 {% endhighlight %}
+
+<aside class="subhead">
+    <h2>A couple example posts</h2>
+</aside>
+
+<aside class="reference">
+    <p>This post's implementation. On the left: CSS Grid. On the right: Fallback to non-supported browsers</p>
+</aside>
+![Example Grid Layout Number 1](/images/blog/grid/side-by-side2.jpg)
+
+<aside class="reference">
+    <p><a href="/blog/2016/12/17/feature-queries-on-the-rise/">My post on Feature Queries</a>. On the left: CSS Grid. On the right: Fallback to non-supported browsers</p>
+</aside>
+
+![Example Grid Layout Number 1](/images/blog/grid/side-by-side.jpg)
