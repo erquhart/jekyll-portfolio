@@ -68,6 +68,9 @@ aside {
     <h2>A couple example posts</h2>
 </aside>
 
+For those that don't want to deal with adjusting the flags in their browsers to see both versions, here are two side-by-side examples of the differences in the blog posts.
+
+
 <aside class="reference">
     <p>This post's implementation. On the left: CSS Grid. On the right: Fallback to non-supported browsers</p>
 </aside>
