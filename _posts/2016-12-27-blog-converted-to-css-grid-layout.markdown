@@ -3,10 +3,7 @@ title: I Converted My Blog to CSS Grid Layout and Regret Nothing
 categories:
 - Design
 layout: post-with-grid
-description: Since the Web became a more beautiful place with the advent of CSS, there’s
-  always been a struggle in the use of more modern features of CSS with browsers who
-  are either slower to adopt or more cautious in the way the implement features. There
-  have been many potential solutions for this issue.
+description: With the death of Lella Vignelli last week (Dec. 21, 2016), I read for the first time The Vignelli Canon. The layout of the pages inspired me. I knew that I wanted to give a quick update to some of my blog posts to mirror some of the design from that book -- a book that talks about grids, as well.
 ---
 
 With the death of Lella Vignelli last week (Dec. 21, 2016), I read for the first time The Vignelli Canon.
