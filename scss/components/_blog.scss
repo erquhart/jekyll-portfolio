@@ -61,7 +61,7 @@ $column-paddings: ($column-padding * $column-number);
     }
     @media (min-width: $grid-width) {
         width: 70%;
-        @supports (display: grid) {
+        @supports (display: grid) and not (display: -ms-grid) {
             margin: calc(2rem + .5vw);
             width: auto;
 
