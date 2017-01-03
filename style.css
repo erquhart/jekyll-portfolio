@@ -720,26 +720,29 @@ img {
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
+  .post .highlight, .post iframe {
+    width: 100%;
+    margin: 0 0 20px; }
   @media (min-width: 800px) {
     .post {
-      width: 70%;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-row-gap: calc(.8rem + .5vw);
-      grid-column-gap: 30px; }
+      width: 70%; }
       @supports ((display: -ms-grid) or (display: grid)) {
         .post {
           margin: calc(2rem + .5vw);
-          width: auto; }
+          width: auto;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-row-gap: calc(.8rem + .5vw);
+          grid-column-gap: 30px; }
           .post p {
-            margin: 0; } }
-      .post > p, .post iframe, .post .highlight {
-        width: 100%;
-        -ms-grid-column-span: 3;
-        -ms-grid-column: 3;
-            grid-column: 3 / span 3; }
+            margin: 0; }
+          .post > p, .post iframe, .post .highlight {
+            -ms-grid-column-span: 3;
+            -ms-grid-column: 3;
+                grid-column: 3 / span 3;
+            width: auto; } }
       .post aside {
         -ms-grid-column-span: 2;
         -ms-grid-column: 1;
@@ -769,9 +772,6 @@ img {
     margin-bottom: calc(1rem + .3vw); }
     .post .reference p {
       margin: 0; }
-  .post .highlight, .post iframe {
-    width: 100%;
-    margin: 0 0 20px; }
 
 .interior h1 {
   font-size: 3rem;

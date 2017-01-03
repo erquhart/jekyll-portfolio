@@ -55,6 +55,10 @@ $column-paddings: ($column-padding * $column-number);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    .highlight, iframe {
+        width: 100%;
+        margin: 0 0 20px;
+    }
     @media (min-width: $grid-width) {
         width: 70%;
         @supports (display: grid) {
@@ -64,15 +68,16 @@ $column-paddings: ($column-padding * $column-number);
             p {
                 margin: 0;
             }
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-row-gap: calc(.8rem + .5vw);
+            grid-column-gap: $column-padding;
+            > p, iframe, .highlight {
+                grid-column: 3 / span 3;
+                width: auto;
+            }
         }
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-row-gap: calc(.8rem + .5vw);
-        grid-column-gap: $column-padding;
-        > p, iframe, .highlight {
-            width: 100%;
-            grid-column: 3 / span 3;
-        }
+
 
 
         aside {
@@ -111,8 +116,5 @@ $column-paddings: ($column-padding * $column-number);
 
     }
 
-    .highlight, iframe {
-        width: 100%;
-        margin: 0 0 20px;
-    }
+
 }
