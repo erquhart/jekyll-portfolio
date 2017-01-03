@@ -19,12 +19,17 @@ To do this, I decided to convert my blog posts to CSS Grid Layout.
 With the release of this blog post, I'm also releasing the updated code into the wild.
 
 <aside class="reference">
-    <p>If you're looking at this and all you see is a centered column, your browser doesn't support Grid yet. <a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid">Find out how to enable Grid to see this as intended</a>.</p>
+    <p>Author's Note: This is no longer an issue. This was a problem of a percentage width being set on my right-side content. Apparently, percentage widths are not friendly toward grid height calculation.</p>
 </aside>
 
-This is a super simple implementation and doesn't look quite right in the Firefox Developer build, due to height bugs, but it's really nice in other experimental browsers -- such as Chrome with the experimental flag checked.
+This is a super simple implementation <span style="text-decoration: line-through">and doesn't look quite right in the Firefox Developer build, due to height bugs</span> <span style="font-size: .7em;">(more in author's note)</span>, but it's really nice in other experimental browsers -- such as Chrome with the experimental flag checked.
+
 
 I've only converted one other blog post to the new layout at this point. Fittingly, it's my post on [Grid and Feature Queries](/blog/2016/12/17/feature-queries-on-the-rise/).
+
+<aside class="reference">
+    <p>If you're looking at this and all you see is a centered column, your browser doesn't support Grid yet. <a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid">Find out how to enable Grid to see this as intended</a>.</p>
+</aside>
 
 I won't dive into too many details, but here's a snippet of some of the CSS I'm using to accomplish this layout.
 
