@@ -727,22 +727,23 @@ img {
     .post {
       width: 70%; }
       @supports ((display: -ms-grid) or (display: grid)) {
-        .post {
-          margin: calc(2rem + .5vw);
-          width: auto;
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-row-gap: calc(.8rem + .5vw);
-          grid-column-gap: 30px; }
-          .post p {
-            margin: 0; }
-          .post > p, .post iframe, .post .highlight {
-            -ms-grid-column-span: 3;
-            -ms-grid-column: 3;
-                grid-column: 3 / span 3;
-            width: auto; } }
+        @supports not (display: -ms-grid) {
+          .post {
+            margin: calc(2rem + .5vw);
+            width: auto;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-row-gap: calc(.8rem + .5vw);
+            grid-column-gap: 30px; }
+            .post p {
+              margin: 0; }
+            .post > p, .post iframe, .post .highlight {
+              -ms-grid-column-span: 3;
+              -ms-grid-column: 3;
+                  grid-column: 3 / span 3;
+              width: auto; } } }
       .post aside {
         -ms-grid-column-span: 2;
         -ms-grid-column: 1;
@@ -755,13 +756,14 @@ img {
           margin: 0;
           text-align: center; }
         @supports ((display: -ms-grid) or (display: grid)) {
-          .post aside p {
-            font-size: calc(.7rem + .5vw);
-            line-height: 1.2em;
-            text-align: left; }
-          .post aside h2 {
-            font-size: calc(1.2rem + .5vw);
-            text-transform: uppercase; } } }
+          @supports not (display: -ms-grid) {
+            .post aside p {
+              font-size: calc(.7rem + .5vw);
+              line-height: 1.2em;
+              text-align: left; }
+            .post aside h2 {
+              font-size: calc(1.2rem + .5vw);
+              text-transform: uppercase; } } } }
   .post .reference {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;

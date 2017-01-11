@@ -61,24 +61,24 @@ $column-paddings: ($column-padding * $column-number);
     }
     @media (min-width: $grid-width) {
         width: 70%;
-        @supports (display: grid) and not (display: -ms-grid) {
-            margin: calc(2rem + .5vw);
-            width: auto;
-
-            p {
-                margin: 0;
-            }
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-row-gap: calc(.8rem + .5vw);
-            grid-column-gap: $column-padding;
-            > p, iframe, .highlight {
-                grid-column: 3 / span 3;
+        @supports (display: grid) {
+            @supports not (display: -ms-grid) {
+                margin: calc(2rem + .5vw);
                 width: auto;
+
+                p {
+                    margin: 0;
+                }
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-row-gap: calc(.8rem + .5vw);
+                grid-column-gap: $column-padding;
+                > p, iframe, .highlight {
+                    grid-column: 3 / span 3;
+                    width: auto;
+                }
             }
         }
-
-
 
         aside {
             p {
@@ -90,14 +90,16 @@ $column-paddings: ($column-padding * $column-number);
             align-self: start;
 
             @supports (display: grid) {
-                p {
-                    font-size: calc(.7rem + .5vw);
-                    line-height: 1.2em;
-                    text-align: left;
-                }
-                h2 {
-                    font-size: calc(1.2rem + .5vw);
-                    text-transform: uppercase;
+                @supports not (display: -ms-grid) {
+                    p {
+                        font-size: calc(.7rem + .5vw);
+                        line-height: 1.2em;
+                        text-align: left;
+                    }
+                    h2 {
+                        font-size: calc(1.2rem + .5vw);
+                        text-transform: uppercase;
+                    }
                 }
             }
 
