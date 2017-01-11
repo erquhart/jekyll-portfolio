@@ -83,3 +83,31 @@ For those that don't want to deal with adjusting the flags in their browsers to 
 </aside>
 
 ![Example Grid Layout Number 1](/images/blog/grid/side-by-side.jpg)
+
+<aside class="subhead">
+    <h2>Update</h2>
+    <p>Jan. 11, 2017</p>
+</aside>
+
+Edge supports Feature Queries, unlike its predecessor. So, it was able to see my Grid declarations. To fix this for my Edge viewers -- since Edge has a VERY broken implementation of Grid -- I implemented a second level of Feature Query to account for browsers that support Grid (which Edge TECHNICALLY does) but also don't support -ms-grid (which Edge does, as well) to keep Edge from seeing display: grid.
+
+The Feature Query now looks like this (could be more elegant, but my libsass doesn't like compound Feature Queries right now):
+
+{% highlight css linenos %}
+
+@supports (display: grid) {
+    @supports not (display: -ms-grid) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: calc(.8rem + .5vw);
+        > p, iframe, .highlight {
+            grid-column: 3 / span 3;
+            width: auto;
+        }
+    }
+}
+
+{% endhighlight %}
+
+
+As usual, thanks Microsoft.
