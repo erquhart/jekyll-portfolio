@@ -54,6 +54,12 @@ This is just the tip of the iceberg when it comes to Grid Layout and the fun rea
 
 Take a look at this simple banner concept done in Grid on CodePen. It would require three more container divs to truly make this design work in just Flexbox. I wouldn't even attempt this layout with floats, personally.
 
+<aside class="reference">
+
+    <p>If you're not seeing an awesome layout over there in that CodePen, you don't have Grid supported. <a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid">Find out how to enable it in your browser here &raquo;</a></p>
+
+</aside>
+
 <iframe height='717' scrolling='no' title='Simple Banner area Grid concept' src='//codepen.io/brob/embed/EZPWdK/?height=717&theme-id=26704&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/brob/pen/EZPWdK/'>Simple Banner area Grid concept</a> by Bryan Robinson (<a href='http://codepen.io/brob'>@brob</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
