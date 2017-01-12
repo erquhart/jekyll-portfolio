@@ -63,6 +63,10 @@ Take a look at this simple banner concept done in Grid on CodePen. It would requ
 <iframe height='717' scrolling='no' title='Simple Banner area Grid concept' src='//codepen.io/brob/embed/EZPWdK/?height=717&theme-id=26704&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/brob/pen/EZPWdK/'>Simple Banner area Grid concept</a> by Bryan Robinson (<a href='http://codepen.io/brob'>@brob</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
+If you don't have Grid enabled yet, here's an image to see what's interactive in the screen above:
+
+![An Image in case you don't want to turn on your Grid flag](/images/blog/grid-example/banner-grid-layout.png)
+
 Grid is going to allow us to have cleaner, more semantic markup and change layout on the fly much easier in CSS without having to reorder elements on the page.
 
 <br>
