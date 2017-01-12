@@ -3,12 +3,12 @@ title: Start Exploring the Magic of CSS Grid Layout
 categories:
 - Design
 layout: post-with-grid
-description: Grid is an amazing new CSS Specification coming to major browsers in 2017. When it’s ready for use in production, it’s going to drastically change the way we do layout on the web. Currently, there’s no real browser support. Edge and IE10/11 “support” grid, but they implemented an early version of the specification and it’s significantly broken.
+description: Grid is an amazing new CSS Specification coming to major browsers in 2017. When it’s ready for use in production, it’s going to drastically change the way we do layout on the web. Currently, there’s no real browser support. Edge and IE10/11 "support" grid, but they implemented an early version of the specification and it’s significantly broken.
 ---
 
 Grid is an amazing new CSS Specification coming to major browsers in 2017. When it’s ready for use in production, it’s going to drastically change the way we do layout on the web.
 
-Currently, there’s no real browser support. Edge and IE10/11 “support” grid, but they implemented an early version of the specification and it’s significantly broken.
+Currently, there’s no real browser support. Edge and IE10/11 "support" grid, but they implemented an early version of the specification and it’s significantly broken.
 
 <aside class="reference">
 
@@ -16,14 +16,14 @@ Currently, there’s no real browser support. Edge and IE10/11 “support” gri
 
 </aside>
 
-To my way of thinking, there are currently three camps in the discussions around CSS Grid Layout: “I think this is amazing,” “I don’t see the use case, I’ll stick with flexbox” and “That’s great, but I won’t be able to use it for the next 5 years so what’s the point?” I hope this will convince the two negative points of view to take a deeper look into Grid and provide my buddies in the “amazing” crowd with some basics to start playing with themselves.
+To my way of thinking, there are currently three camps in the discussions around CSS Grid Layout: "I think this is amazing," "I don’t see the use case, I’ll stick with flexbox" and "That’s great, but I won’t be able to use it for the next 5 years so what’s the point?" I hope this will convince the two negative points of view to take a deeper look into Grid and provide my buddies in the "amazing" crowd with some basics to start playing with themselves.
 
 <aside class="subhead">
     <h2>Why Grid and not Flexbox?</h2>
     <aside class="reference"><p>— <a href="http://lists.w3.org/Archives/Public/www-style/2013May/0114.html">Tab Atkins on the CSS W3C mailing list</a> about the importance of set of complimentary layout specifications</p> </aside>
 </aside>
 
-“Flexbox is for one-dimensional layouts - anything that needs to be laid out in a straight line (or in a broken line, which would be a single straight line if they were joined back together). Grid is for two-dimensional layouts. It can be used as a low-powered flexbox substitute (we’re trying to make sure that a single-column/row grid acts very similar to a flexbox), but that’s not using its full power.”
+"Flexbox is for one-dimensional layouts - anything that needs to be laid out in a straight line (or in a broken line, which would be a single straight line if they were joined back together). Grid is for two-dimensional layouts. It can be used as a low-powered flexbox substitute (we’re trying to make sure that a single-column/row grid acts very similar to a flexbox), but that’s not using its full power."
 
 For simple rows of content, Flexbox is still what you want to use. It works really well for flexible content flowing in one direction. Grid comes in when you want to place and stretch content blocks across both the horizontal and vertical axes.
 
@@ -53,6 +53,12 @@ Instead of relying on JavaScript libraries like Masonry, we can handle all of th
 This is just the tip of the iceberg when it comes to Grid Layout and the fun really begins when you start placing real content on the page.
 
 Take a look at this simple banner concept done in Grid on CodePen. It would require three more container divs to truly make this design work in just Flexbox. I wouldn't even attempt this layout with floats, personally.
+
+<aside class="reference">
+
+    <p>If you're not seeing an awesome layout over there in that CodePen, you don't have Grid supported. <a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid">Find out how to enable it in your browser here &raquo;</a></p>
+
+</aside>
 
 <iframe height='717' scrolling='no' title='Simple Banner area Grid concept' src='//codepen.io/brob/embed/EZPWdK/?height=717&theme-id=26704&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/brob/pen/EZPWdK/'>Simple Banner area Grid concept</a> by Bryan Robinson (<a href='http://codepen.io/brob'>@brob</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
