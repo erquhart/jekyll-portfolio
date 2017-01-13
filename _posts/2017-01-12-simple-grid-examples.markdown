@@ -16,7 +16,7 @@ Currently, there’s no real browser support. Edge and IE10/11 "support" grid, b
 
 </aside>
 
-To my way of thinking, there are currently three camps in the discussions around CSS Grid Layout: "I think this is amazing," "I don’t see the use case, I’ll stick with flexbox" and "That’s great, but I won’t be able to use it for the next 5 years so what’s the point?" I hope this will convince the two negative points of view to take a deeper look into Grid and provide my buddies in the "amazing" crowd with some basics to start playing with themselves.
+To my way of thinking, there are currently three camps in the discussions around CSS Grid Layout: "I think this is amazing," "I don’t see the use case, I’ll stick with flexbox" and "That’s great, but I won’t be able to use it for the next 5 years so what’s the point?" I hope this will begin to chip away at the two negative points of view to take a deeper look into Grid and provide my buddies in the "amazing" crowd with some basics to start playing with the specification themselves.
 
 <aside class="subhead">
     <h2>Why Grid and not Flexbox?</h2>
