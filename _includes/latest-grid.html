@@ -1,0 +1,18 @@
+<h2 class="section-header">Latest Articles</h2>
+
+<section class="grid grid--latest">
+
+
+{% for item in site.posts %}
+
+    <article class="item">
+        <h2>{{ item.title }}</h2>
+        <p class="description">{{ item.description | truncatewords: 35, "..." }}</p>
+        <a href="{{ item.url }}" class="button">Read More &raquo;</a>
+    </article>
+
+{% endfor %}
+
+
+
+</section>
