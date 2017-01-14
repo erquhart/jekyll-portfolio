@@ -1,0 +1,7 @@
+@mixin grid-support() {
+    @supports (display: grid) {
+        @supports not (display: -ms-grid) {
+            @content
+        }
+    }
+}

@@ -775,6 +775,88 @@ img {
     .post .reference p {
       margin: 0; }
 
+.grid--latest {
+  display: block;
+  margin-bottom: 60px; }
+  @media (min-width: 420px) {
+    .grid--latest {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @supports ((display: -ms-grid) or (display: grid)) {
+    @supports not (display: -ms-grid) {
+      .grid--latest {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px; } } }
+  .grid--latest .item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 30%;
+            flex: 1 30%;
+    padding: 40px 5%;
+    min-height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #5eb1bf; }
+    @supports not ((display: -ms-grid) or (display: grid)) {
+      .grid--latest .item {
+        margin: 20px; } }
+    .grid--latest .item:nth-child(2n) {
+      color: #cccccc;
+      background-color: #235980; }
+    @supports ((display: -ms-grid) or (display: grid)) {
+      @supports not (display: -ms-grid) {
+        .grid--latest .item {
+          -ms-grid-row: span 1;
+              grid-row: span 1;
+          -ms-grid-column: span 6;
+              grid-column: span 6; }
+          @media (min-width: 420px) and (max-width: 900px) {
+            .grid--latest .item {
+              -ms-grid-column: span 3;
+                  grid-column: span 3; } }
+          @media (min-width: 900px) {
+            .grid--latest .item {
+              -ms-grid-column: span 1;
+                  grid-column: span 1; }
+              .grid--latest .item:nth-child(2) .description, .grid--latest .item:nth-child(3) .description, .grid--latest .item:nth-child(4) .description, .grid--latest .item:nth-child(9) .description, .grid--latest .item:nth-child(10) .description {
+                display: none; }
+              .grid--latest .item:nth-child(2) .button, .grid--latest .item:nth-child(3) .button, .grid--latest .item:nth-child(4) .button, .grid--latest .item:nth-child(9) .button, .grid--latest .item:nth-child(10) .button {
+                font-size: .8em;
+                padding: 5px 40px; }
+              .grid--latest .item:nth-child(2) h2, .grid--latest .item:nth-child(3) h2, .grid--latest .item:nth-child(4) h2, .grid--latest .item:nth-child(9) h2, .grid--latest .item:nth-child(10) h2 {
+                font-size: 1em; }
+              .grid--latest .item:nth-child(1) {
+                grid-row: 1 / 3;
+                grid-column: 1 / 4; }
+              .grid--latest .item:nth-child(5) {
+                -ms-grid-column-span: 3;
+                -ms-grid-column: 4;
+                    grid-column: 4 / span 3; }
+              .grid--latest .item:nth-child(6), .grid--latest .item:nth-child(7) {
+                -ms-grid-column: span 2;
+                    grid-column: span 2;
+                -ms-grid-row: span 2;
+                    grid-row: span 2; }
+              .grid--latest .item:nth-child(8) {
+                -ms-grid-column: span 2;
+                    grid-column: span 2; } } } }
+
 .interior h1 {
   font-size: 3rem;
   text-align: center; }
