@@ -785,6 +785,10 @@ img {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
+  .grid--latest h2 {
+    max-width: 100%; }
+  .grid--latest .description {
+    max-width: 100%; }
   @supports ((display: -ms-grid) or (display: grid)) {
     @supports not (display: -ms-grid) {
       .grid--latest {

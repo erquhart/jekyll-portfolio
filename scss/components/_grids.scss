@@ -4,8 +4,13 @@
         display: flex;
         flex-wrap: wrap;
     }
+    h2 {
+        max-width: 100%;
+    }
 
-
+    .description {
+        max-width: 100%;
+    }
     margin-bottom: 60px;
 
     @include grid-support {
