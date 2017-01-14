@@ -864,7 +864,20 @@ img {
                     grid-row: span 2; }
               .grid--latest .item:nth-child(8) {
                 -ms-grid-column: span 2;
-                    grid-column: span 2; } } } }
+                    grid-column: span 2; }
+                .grid--latest .item:nth-child(8) .description {
+                  display: none; }
+                .grid--latest .item:nth-child(8) .button {
+                  font-size: .8em;
+                  padding: 5px 3%; }
+                .grid--latest .item:nth-child(8) h2 {
+                  font-size: 1em; }
+                .grid--latest .item:nth-child(8) .button {
+                  -ms-flex-item-align: auto;
+                      -ms-grid-row-align: auto;
+                      align-self: auto;
+                  width: 100%;
+                  text-align: center; } } } }
 
 .interior h1 {
   font-size: 3rem;

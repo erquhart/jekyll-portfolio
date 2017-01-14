@@ -93,6 +93,7 @@
                 }
                 &:nth-child(8) {
                     grid-column: span 2;
+                    @include small-item;
                 }
             }
         }
