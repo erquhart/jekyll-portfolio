@@ -6,6 +6,7 @@
 {% for item in site.posts limit: 9 %}
 
     <article class="item">
+        <time class="date">{{ item.date | date:"%d %b, %Y" }}</time>
         <h2>{{ item.title }}</h2>
         <p class="description">{{ item.description | truncatewords: 35, "..." }}</p>
         <a href="{{ item.url }}" class="button">Read More</a>
