@@ -1,17 +1,25 @@
 .grid--latest {
     display: block;
-    @media (min-width: 420px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    margin-bottom: 60px;
+
     h2 {
         max-width: 100%;
     }
-
     .description {
         max-width: 100%;
     }
-    margin-bottom: 60px;
+    .button {
+        align-self: auto;
+        width: 100%;
+        text-align: center;
+    }
+    @media (min-width: 420px) {
+        display: flex;
+        flex-wrap: wrap;
+        .button {
+            max-width: 50vw;
+        }
+    }
 
     @include grid-support {
         display: grid;
@@ -24,9 +32,7 @@
                              "sixth sixth seventh seventh eighth eighth"
                              "sixth sixth seventh seventh ninth  tenth";
 
-        .button {
-            align-self: flex-start;
-        }
+
     }
 
 @mixin small-item {
@@ -40,12 +46,7 @@
     h2 {
         font-size: 1em;
     }
-    .button {
-        align-self: auto;
-        width: 100%;
-        text-align: center;
 
-    }
 }
 
     .item {

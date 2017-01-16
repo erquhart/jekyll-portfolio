@@ -23,7 +23,7 @@
     @include content-theme();
 }
 .neutral {
-    @include content-theme($background: darken($brand-neutral, 10%), $foreground: $brand-accent);
+    @include content-theme($background: darken($brand-neutral, 20%), $foreground: $brand-accent);
 }
 .deep {
     @include content-theme($background: $brand, $foreground: $brand-light, $main-font: darken($light-gray, 10%));
