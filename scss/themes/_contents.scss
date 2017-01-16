@@ -1,0 +1,33 @@
+@mixin content-theme($background: $stripe-background-color, $foreground: $stripe-foreground-color, $main-font: $dark-gray) {
+    background-color: $background;
+    color: $main-font;
+    .headline {
+        color: $foreground;
+
+    }
+    a {
+        color: $foreground;
+        &:hover {
+            color: darken($foreground, 15%);
+        }
+    }
+    .button {
+        @include button-theme(    $foreground,
+                                  $bg-hover: darken($foreground, 10%),
+                                  $border-color: $button-font-color,
+                                  $border-color-hover: $button-font-color)
+    }
+}
+
+.primary {
+    @include content-theme();
+}
+.neutral {
+    @include content-theme($background: darken($brand-neutral, 10%), $foreground: $brand-accent);
+}
+.deep {
+    @include content-theme($background: $brand, $foreground: $brand-light, $main-font: darken($light-gray, 10%));
+}
+.bright {
+    @include content-theme($background: $brand-accent, $foreground: darken($brand-accent, 20%), $main-font: $light-gray);
+}
