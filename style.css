@@ -796,7 +796,8 @@ img {
         display: grid;
         -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 20px; }
+        grid-gap: calc(.5rem + .5vw);
+        grid-template-areas: "main   main main    second   third fourth" "main   main main    fifth    fifth fifth" "sixth sixth seventh seventh eighth eighth" "sixth sixth seventh seventh eighth eighth" "ninth ninth ninth   tenth   tenth  tenth"; }
         .grid--latest .button {
           -ms-flex-item-align: start;
               align-self: flex-start; } } }
@@ -833,55 +834,57 @@ img {
               grid-row: span 1;
           -ms-grid-column: span 6;
               grid-column: span 6; }
-          @media (min-width: 420px) and (max-width: 900px) {
+          @media (min-width: 450px) and (max-width: 1100px) {
             .grid--latest .item {
               -ms-grid-column: span 3;
                   grid-column: span 3; } }
-          @media (min-width: 900px) {
-            .grid--latest .item {
-              -ms-grid-column: span 1;
-                  grid-column: span 1; }
-              .grid--latest .item:nth-child(2) .description, .grid--latest .item:nth-child(3) .description, .grid--latest .item:nth-child(4) .description, .grid--latest .item:nth-child(9) .description, .grid--latest .item:nth-child(10) .description {
-                display: none; }
-              .grid--latest .item:nth-child(2) .button, .grid--latest .item:nth-child(3) .button, .grid--latest .item:nth-child(4) .button, .grid--latest .item:nth-child(9) .button, .grid--latest .item:nth-child(10) .button {
-                font-size: .8em;
-                padding: 5px 3%; }
-              .grid--latest .item:nth-child(2) h2, .grid--latest .item:nth-child(3) h2, .grid--latest .item:nth-child(4) h2, .grid--latest .item:nth-child(9) h2, .grid--latest .item:nth-child(10) h2 {
-                font-size: 1em; }
-              .grid--latest .item:nth-child(2) .button, .grid--latest .item:nth-child(3) .button, .grid--latest .item:nth-child(4) .button, .grid--latest .item:nth-child(9) .button, .grid--latest .item:nth-child(10) .button {
-                -ms-flex-item-align: auto;
-                    -ms-grid-row-align: auto;
-                    align-self: auto;
-                width: 100%;
-                text-align: center; }
-              .grid--latest .item:nth-child(1) {
-                grid-row: 1 / 3;
-                grid-column: 1 / 4; }
-              .grid--latest .item:nth-child(5) {
-                -ms-grid-column-span: 3;
-                -ms-grid-column: 4;
-                    grid-column: 4 / span 3; }
-              .grid--latest .item:nth-child(6), .grid--latest .item:nth-child(7) {
-                -ms-grid-column: span 2;
-                    grid-column: span 2;
-                -ms-grid-row: span 2;
-                    grid-row: span 2; }
-              .grid--latest .item:nth-child(8) {
-                -ms-grid-column: span 2;
-                    grid-column: span 2; }
-                .grid--latest .item:nth-child(8) .description {
-                  display: none; }
-                .grid--latest .item:nth-child(8) .button {
-                  font-size: .8em;
-                  padding: 5px 3%; }
-                .grid--latest .item:nth-child(8) h2 {
-                  font-size: 1em; }
-                .grid--latest .item:nth-child(8) .button {
-                  -ms-flex-item-align: auto;
-                      -ms-grid-row-align: auto;
-                      align-self: auto;
-                  width: 100%;
-                  text-align: center; } } } }
+          @media (min-width: 1100px) {
+            .grid--latest .item:nth-child(2) .description, .grid--latest .item:nth-child(3) .description, .grid--latest .item:nth-child(4) .description, .grid--latest .item:nth-child(9) .description, .grid--latest .item:nth-child(10) .description {
+              display: none; }
+            .grid--latest .item:nth-child(2) .button, .grid--latest .item:nth-child(3) .button, .grid--latest .item:nth-child(4) .button, .grid--latest .item:nth-child(9) .button, .grid--latest .item:nth-child(10) .button {
+              font-size: .8em;
+              padding: 5px 3%; }
+            .grid--latest .item:nth-child(2) h2, .grid--latest .item:nth-child(3) h2, .grid--latest .item:nth-child(4) h2, .grid--latest .item:nth-child(9) h2, .grid--latest .item:nth-child(10) h2 {
+              font-size: 1em; }
+            .grid--latest .item:nth-child(2) .button, .grid--latest .item:nth-child(3) .button, .grid--latest .item:nth-child(4) .button, .grid--latest .item:nth-child(9) .button, .grid--latest .item:nth-child(10) .button {
+              -ms-flex-item-align: auto;
+                  -ms-grid-row-align: auto;
+                  align-self: auto;
+              width: 100%;
+              text-align: center; }
+            .grid--latest .item:nth-child(1) {
+              grid-area: main; }
+            .grid--latest .item:nth-child(2) {
+              grid-area: second; }
+            .grid--latest .item:nth-child(3) {
+              grid-area: third; }
+            .grid--latest .item:nth-child(4) {
+              grid-area: fourth; }
+            .grid--latest .item:nth-child(5) {
+              grid-area: fifth; }
+            .grid--latest .item:nth-child(6) {
+              grid-area: sixth; }
+            .grid--latest .item:nth-child(7) {
+              grid-area: seventh; }
+            .grid--latest .item:nth-child(8) {
+              grid-area: eighth; }
+            .grid--latest .item:nth-child(9) {
+              grid-area: ninth; }
+            .grid--latest .item:nth-child(10) {
+              grid-area: tenth; }
+            .grid--latest .item:nth-child(8) .description {
+              display: none; }
+            .grid--latest .item:nth-child(8) .button {
+              font-size: .8em;
+              padding: 5px 3%; }
+            .grid--latest .item:nth-child(8) h2 {
+              font-size: 1em; }
+            .grid--latest .item:nth-child(8) .button {
+              -ms-flex-item-align: auto;
+                  -ms-grid-row-align: auto;
+                  align-self: auto;
+              width: 100%;
+              text-align: center; } } } }
 
 .interior h1 {
   font-size: 3rem;
