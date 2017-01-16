@@ -5,7 +5,7 @@
 
 {% for item in site.posts limit: 9 %}
 
-    <article class="item">
+    <article class="item {% cycle  'primary', 'deep', 'neutral' %}">
         <time class="date">{{ item.date | date:"%d %b, %Y" }}</time>
         <h2>{{ item.title }}</h2>
         <p class="description">{{ item.description | truncatewords: 35, "..." }}</p>
@@ -14,9 +14,14 @@
 
 {% endfor %}
 
-    <article class="item">
+    <article class="item bright">
         <h2>Interested in More?</h2>
         <a href="/blog" class="button">See All Posts</a>
+    </article>
+
+    <article class="item promo bright">
+        <h2>I post regular experiments to CodePen</h2>
+        <a href="http://codepen.io/brob/" class="button">See the Pens</a>
     </article>
 
 </section>

@@ -20,19 +20,15 @@
 
         grid-template-areas: "main   main main    second   third fourth"
                              "main   main main    fifth    fifth fifth"
+                             "promo  promo promo  promo    promo promo"
                              "sixth sixth seventh seventh eighth eighth"
-                             "sixth sixth seventh seventh eighth eighth"
-                             "ninth ninth ninth   tenth   tenth  tenth";
+                             "sixth sixth seventh seventh ninth  tenth";
 
         .button {
             align-self: flex-start;
         }
     }
 
-@mixin dark-background {
-    color: darken($light-gray, 10%);
-    background-color: $brand;
-}
 @mixin small-item {
     .description {
         display: none;
@@ -60,7 +56,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $brand-light;
 
 
 
@@ -72,7 +67,6 @@
 
         }
         &:nth-child(2n) {
-            @include dark-background;
         }
         @include grid-support {
             grid-row: span 1;
@@ -119,6 +113,10 @@
                 }
                 &:nth-child(10) {
                     grid-area: tenth;
+                }
+
+                &.promo {
+                    grid-area: promo;
                 }
 
                 // &:nth-child(5) {

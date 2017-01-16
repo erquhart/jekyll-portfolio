@@ -797,7 +797,7 @@ img {
         -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: calc(.5rem + .5vw);
-        grid-template-areas: "main   main main    second   third fourth" "main   main main    fifth    fifth fifth" "sixth sixth seventh seventh eighth eighth" "sixth sixth seventh seventh eighth eighth" "ninth ninth ninth   tenth   tenth  tenth"; }
+        grid-template-areas: "main   main main    second   third fourth" "main   main main    fifth    fifth fifth" "promo  promo promo  promo    promo promo" "sixth sixth seventh seventh eighth eighth" "sixth sixth seventh seventh ninth  tenth"; }
         .grid--latest .button {
           -ms-flex-item-align: start;
               align-self: flex-start; } } }
@@ -819,14 +819,10 @@ img {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    background-color: #5eb1bf; }
+            align-items: center; }
     @supports not ((display: -ms-grid) or (display: grid)) {
       .grid--latest .item {
         margin: 20px; } }
-    .grid--latest .item:nth-child(2n) {
-      color: #cccccc;
-      background-color: #235980; }
     @supports ((display: -ms-grid) or (display: grid)) {
       @supports not (display: -ms-grid) {
         .grid--latest .item {
@@ -872,6 +868,8 @@ img {
               grid-area: ninth; }
             .grid--latest .item:nth-child(10) {
               grid-area: tenth; }
+            .grid--latest .item.promo {
+              grid-area: promo; }
             .grid--latest .item:nth-child(8) .description {
               display: none; }
             .grid--latest .item:nth-child(8) .button {
@@ -892,3 +890,75 @@ img {
 
 .interior .post-meta {
   text-align: center; }
+
+.primary {
+  background-color: #5eb1bf;
+  color: #3f3f3f; }
+  .primary .headline {
+    color: #235980; }
+  .primary a {
+    color: #235980; }
+    .primary a:hover {
+      color: #132f44; }
+  .primary .button {
+    color: #eff6e0;
+    background-color: #235980;
+    border-color: #eff6e0; }
+    .primary .button:hover {
+      color: #eff6e0;
+      background-color: #183d58;
+      border-color: #eff6e0; }
+
+.neutral {
+  background-color: #dbebb8;
+  color: #3f3f3f; }
+  .neutral .headline {
+    color: #ed6a5a; }
+  .neutral a {
+    color: #ed6a5a; }
+    .neutral a:hover {
+      color: #e22f19; }
+  .neutral .button {
+    color: #eff6e0;
+    background-color: #ed6a5a;
+    border-color: #eff6e0; }
+    .neutral .button:hover {
+      color: #eff6e0;
+      background-color: #e8402c;
+      border-color: #eff6e0; }
+
+.deep {
+  background-color: #235980;
+  color: #cccccc; }
+  .deep .headline {
+    color: #5eb1bf; }
+  .deep a {
+    color: #5eb1bf; }
+    .deep a:hover {
+      color: #3b8895; }
+  .deep .button {
+    color: #eff6e0;
+    background-color: #5eb1bf;
+    border-color: #eff6e0; }
+    .deep .button:hover {
+      color: #eff6e0;
+      background-color: #4399a7;
+      border-color: #eff6e0; }
+
+.bright {
+  background-color: #ed6a5a;
+  color: #e5e5e5; }
+  .bright .headline {
+    color: #cb2a16; }
+  .bright a {
+    color: #cb2a16; }
+    .bright a:hover {
+      color: #861c0f; }
+  .bright .button {
+    color: #eff6e0;
+    background-color: #cb2a16;
+    border-color: #eff6e0; }
+    .bright .button:hover {
+      color: #eff6e0;
+      background-color: #9d2011;
+      border-color: #eff6e0; }
