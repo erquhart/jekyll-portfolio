@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+    imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
@@ -9,6 +10,16 @@ var gulp = require('gulp'),
 
 
 gulp.task('default', ['sass', 'sass:watch']);
+
+gulp.task('img-opt', function() {
+    return gulp.src('_site/images/**')
+      .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{ removeViewBox: false }]
+            //use: [pngcrush()]
+        }))
+       .pipe(gulp.dest('_site/img'))
+});
 
 gulp.task('sass', function() {
    return gulp.src('scss/**/*.scss')
