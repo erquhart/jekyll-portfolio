@@ -59,6 +59,9 @@ $column-paddings: ($column-padding * $column-number);
         width: 100%;
         margin: 0 0 20px;
     }
+    .highlight {
+        max-width: 100%;
+    }
     @media (min-width: $grid-width) {
         width: 70%;
         @supports (display: grid) {
