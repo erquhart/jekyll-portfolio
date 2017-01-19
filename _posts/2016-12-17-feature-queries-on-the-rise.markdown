@@ -26,7 +26,8 @@ Then, Internet Explorer — a long-time culprit of compatibility issues — impl
     <p>More examples of conditional stylesheets <a href="https://css-tricks.com/how-to-create-an-ie-only-stylesheet/">over on CSS Tricks</a></p>
 </aside>
 
-{% highlight html linenos %}
+{% highlight html %}
+
 <!-- Main CSS -->
 <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -48,7 +49,7 @@ Then, in 2009, came [the Modernizr javascript library by Faruk Ates](https://mod
 The Modernizr library uses User Agent “sniffing” to find out what a user’s browser is capable of and then provides that information in a few ways for the developer to access. A dev can utilize the library in their javascript to test both CSS features and JS features. Modernizr also can provide your application with features dumped out in a string of class names on the <html> element on the page. Meaning your css can target browsers that support flexbox or browsers that DON’T support flexbox in new and powerful ways.
 
 
-{% highlight html linenos %}
+{% highlight html %}
 
 <html class="js no-flexbox canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange no-history draganddrop no-websockets rgba hsla multiplebgs backgroundsize no-borderimage borderradius boxshadow no-textshadow opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections csstransforms no-csstransforms3d no-csstransitions fontface generatedcontent video audio localstorage sessionstorage no-webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 
@@ -64,13 +65,15 @@ All of these methods are great, but they aren’t native citizens of the specifi
 
 The syntax is relatively easy:
 
-{% highlight css linenos %}
+{% highlight css %}
+
 @supports (css-property: value) or (css-property: value) {
 	.class {
 		…
 	}
 
 }
+
 {% endhighlight %}
 
 
