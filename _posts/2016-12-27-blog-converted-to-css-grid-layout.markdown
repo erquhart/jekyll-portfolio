@@ -39,7 +39,8 @@ I won't dive into too many details, but here's a snippet of some of the CSS I'm 
 
 </aside>
 
-{% highlight css linenos %}
+{% highlight scss %}
+
 .post {
     /* Sets this to be a grid,
     defines the columns and adds margin between rows */
@@ -93,7 +94,7 @@ Edge supports Feature Queries, unlike its predecessor. So, it was able to see my
 
 The Feature Query now looks like this (could be more elegant, but my libsass doesn't like compound Feature Queries right now):
 
-{% highlight css linenos %}
+{% highlight scss %}
 
 @supports (display: grid) {
     @supports not (display: -ms-grid) {
