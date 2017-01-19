@@ -160,7 +160,6 @@ Let's make an impactful layout for our articles using some fun new code.
                                   "promo  promo promo  promo    promo promo"
                                   "sixth sixth seventh seventh eighth eighth"
                                   "sixth sixth seventh seventh ninth  tenth";
-            //Unindented above for readability
         }
         .grid .item {
             display: flex;
