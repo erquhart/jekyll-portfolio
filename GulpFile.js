@@ -6,20 +6,23 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    run = require('gulp-run'),
+    runSequence = require('run-sequence'),
+    gutil = require('gulp-util');
 
 
-gulp.task('default', ['sass', 'sass:watch']);
+// gulp.task('default', ['sass', 'sass:watch']);
 
 gulp.task('img-opt', function() {
-    return gulp.src('_site/images/**')
+    return gulp.src('_site/images/**/')
       .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }]
-            //use: [pngcrush()]
         }))
        .pipe(gulp.dest('_site/img'))
 });
+
 
 gulp.task('sass', function() {
    return gulp.src('scss/**/*.scss')
@@ -31,3 +34,25 @@ gulp.task('sass', function() {
 gulp.task('sass:watch', function () {
     gulp.watch(['scss/**/*.scss', 'scss/*.scss'], ['sass']);
 });
+
+gulp.task('build:jekyll', function() {
+    var shellCommand = 'jekyll build';
+
+    return gulp.src('')
+        .pipe(run(shellCommand))
+        .on('error', gutil.log);
+});
+
+gulp.task('serve:jekyll', function() {
+    var shellCommand = "jekyll serve";
+
+    return gulp.src('')
+    .pipe(run(shellCommand))
+    .on('error', gutil.log);
+});
+
+gulp.task('default', function(callback) {
+    runSequence('sass:watch', 'serve:jekyll', callback);
+});
+
+gulp.task('build', ['sass', 'build:jekyll', 'img-opt']);
