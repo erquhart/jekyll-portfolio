@@ -28,12 +28,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    @include secondary-font;
+    @include primary-font;
     font-size: calc(1.3em + 2.5vw);
     line-height: $base-line-height;
     margin-bottom: calc(.5em + .5vw);
 
 }
+
 h2 {
     font-size: calc(1.6em + .5vw);
     line-height: $base-line-height;

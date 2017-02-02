@@ -5,15 +5,16 @@
         max-width: 950px;
     }
 }
-h1, h2 {
-}
+
 %main-headlines {
     text-align: center;
 }
 .main-headline {
     @extend %main-headlines;
+    @include secondary-font;
     color: $brand;
     margin-bottom: .8vw;
+    
 }
 .secondary-headline {
     @extend %main-headlines;
