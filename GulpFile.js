@@ -20,7 +20,7 @@ gulp.task('img-opt', function() {
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }]
         }))
-       .pipe(gulp.dest('_site/img'))
+       .pipe(gulp.dest('_site/images'))
 });
 
 
