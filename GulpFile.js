@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync'),
     run = require('gulp-run'),
@@ -28,8 +28,10 @@ gulp.task('sass', function() {
    return gulp.src('scss/**/*.scss')
        .pipe(sass().on('error', sass.logError))
        .pipe(autoprefixer())
+       .pipe(cleanCSS())
        .pipe(gulp.dest('./'))
 });
+
 
 gulp.task('sass:watch', function () {
     gulp.watch(['scss/**/*.scss', 'scss/*.scss'], ['sass']);
@@ -55,4 +57,6 @@ gulp.task('default', function(callback) {
     runSequence('sass:watch', 'serve:jekyll', callback);
 });
 
-gulp.task('build', ['sass', 'build:jekyll', 'img-opt']);
+gulp.task('build', function(callback) {
+    runSequence('sass', 'build:jekyll', 'img-opt');
+});
