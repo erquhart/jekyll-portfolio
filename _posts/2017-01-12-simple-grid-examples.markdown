@@ -8,6 +8,10 @@ description: Grid is an amazing new CSS Specification coming to major browsers i
 
 Grid is an amazing new CSS Specification coming to major browsers in 2017. When it’s ready for use in production, it’s going to drastically change the way we do layout on the web.
 
+<aside class="reference">
+    <p>If you're worried about browser support, <a href='/blog/2017/01/18/your-code-should-fall-forward/'>don't have a "fallback," "fall forward" into Grid</a>.</p>
+</aside>
+
 Currently, there’s no real browser support. Edge and IE10/11 "support" grid, but they implemented an early version of the specification and it’s significantly broken.
 
 <aside class="reference">
