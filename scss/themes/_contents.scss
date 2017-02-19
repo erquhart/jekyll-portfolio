@@ -27,7 +27,19 @@
 }
 .deep {
     @include content-theme($background: $brand, $foreground: $brand-light, $main-font: darken($light-gray, 10%));
+    a {
+        color: $white;
+        &:hover {
+            color: $brand-light;
+        }
+    }
 }
 .bright {
     @include content-theme($background: $brand-accent, $foreground: darken($brand-accent, 20%), $main-font: $light-gray);
+    a {
+        color: $white;
+        &:hover {
+            color: $brand-neutral;
+        }
+    }
 }
