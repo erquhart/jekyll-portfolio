@@ -4,12 +4,12 @@ permalink: "/experiments/"
 layout: interior
 ---
 
-<section class="posts">
+<section class="grid--simple">
 
 {% for experiment in site.experiments %}
-    <article class="stripe {% cycle 'neutral', 'primary' %}">
-        <h3 class="stripe_headline"><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
-        <div class="stripe_description">
+    <article class="item {% cycle 'neutral', 'primary' %} {{ experiment.grid-size }}">
+        <h2><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
+        <div class="description">
             <p>{{ experiment.description }}</p>
             <a href="{{ experiment.url }}" title="{{ experiment.title }}">Read More &raquo;</a>
         </div>
