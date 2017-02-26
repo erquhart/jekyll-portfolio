@@ -169,6 +169,7 @@
         @media (min-width: 450px) {
             display: grid;
             grid-auto-flow: dense;
+            grid-auto-rows: minmax(3vh, 1fr);
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-gap: calc(.5rem + .5vw);
         }
@@ -217,7 +218,6 @@
                 }
                 &.large {
                     grid-column: span 3;
-                    grid-row: span 2;
                 }
             }
         }
