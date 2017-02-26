@@ -37,16 +37,17 @@
     }
 
 @mixin small-item {
-    .description {
-        display: none;
-    }
-    .button {
-        font-size: .8em;
-        padding: 5px 3%;
-    }
-    h2 {
-        font-size: 1em;
-    }
+        .description {
+            display: none;
+        }
+        .button {
+            font-size: .8em;
+            padding: 5px 3%;
+        }
+        h2 {
+            font-size: 1em;
+        }
+
 
 }
 
@@ -136,4 +137,89 @@
             }
         }
     }
+}
+
+
+.grid--simple {
+    display: block;
+    margin-bottom: 60px;
+
+    h2 {
+        max-width: 100%;
+    }
+    .description {
+        width: 100%;
+        max-width: 70vw;
+    }
+    .button {
+        align-self: auto;
+        width: 100%;
+        text-align: center;
+    }
+    @media (min-width: 420px) {
+        display: flex;
+        flex-wrap: wrap;
+        .button {
+            max-width: 50vw;
+        }
+    }
+
+    @include grid-support {
+        @media (min-width: 450px) {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-auto-rows: minmax(3vh, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: calc(.5rem + .5vw);
+        }
+
+    }
+
+
+    .item {
+        flex: 1 30%;
+        padding: 40px 5%;
+        min-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+
+        @supports not(display:grid) {
+            margin: 20px;
+        }
+
+        @include grid-support {
+            @media (min-width: 450px) {
+            grid-row: span 1;
+            grid-column: span 2;
+
+        }
+
+
+            @media (min-width: 950px) {
+
+                &.small {
+
+                    .button {
+                        font-size: .8em;
+                        padding: 5px 3%;
+                    }
+                    h2 {
+                        font-size: 1em;
+                    }
+                }
+
+                &.small {
+                    grid-column: span 1;
+                }
+                &.large {
+                    grid-column: span 4;
+                }
+            }
+        }
+    }
+
 }
