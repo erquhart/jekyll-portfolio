@@ -37,7 +37,6 @@
     }
 
 @mixin small-item {
-    &.small {
         .description {
             display: none;
         }
@@ -48,7 +47,7 @@
         h2 {
             font-size: 1em;
         }
-    }
+
 
 }
 
@@ -217,7 +216,7 @@
                     grid-column: span 1;
                 }
                 &.large {
-                    grid-column: span 3;
+                    grid-column: span 4;
                 }
             }
         }
