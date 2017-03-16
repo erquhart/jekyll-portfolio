@@ -2,8 +2,11 @@
 title: Can CSS Grid open up interesting CMS Layout options?
 categories:
 - Development
+- Design
 layout: post
-description: CSS Grid is coming in Firefox 52 in March. That’s amazing. It could overshadow a few small improvements that are also coming in the release. The Box-Alignment module is getting a couple new features, as well.
+description: I love hand crafting layout in CSS Grid. Ask my co-workers. They're tired of hearing about it. What about people who write no CSS, though? Can we use Grid to open up a world of new layout options to CMS users?
+tags:
+- Grid
 ---
 
 I love hand crafting layout in CSS Grid. Ask my co-workers. They're tired of hearing about it.
