@@ -12,7 +12,7 @@ Nothing is going to stop me from hand-coding my CSS. What about people who write
 
 That's not a rhetorical question. I want to hear opinions on this.
 
-I've created a very simple prototype. To all my friends who write good JavaScript, I apologize. Don't look at the JS panel and you'll be happier.
+I've created a very simple prototype. To all my friends who write good JavaScript, I apologize. Don't look at the JS panel and you'll be happier. The [CodePen is here](http://codepen.io/brob/pen/QpqNVq/) and embedded at the bottom of the article.
 
 In this example, there are three components on a six-column grid. The doesn't have rows specified, but is adjusting the implicit rows via grid-auto-rows.
 
@@ -22,17 +22,13 @@ With simple markup and ugly JavaScript, I created an interface to let a user sel
 
 And change it to these layouts:
 
-![Changing the layout based on user input](/images/blog/cms-grid/grid-2.jpg)
-
-![Changing the layout based on user input](/images/blog/cms-grid/grid-3.jpg)
-
-![Changing the layout based on user input](/images/blog/cms-grid/grid-4.jpg)
-
-
+<img src="/images/blog/cms-grid/grid-cms.gif" alt="Changing the layout based on user input" style="width: 100%;">
 
 As a CSS purist, I'm always wary of ceding my control over to JavaScript or a CMS database. Does this enable a CMS user more interesting controls than otherwise possible?
 
 ## Try it for yourself
+
+Keep in mind, you'll need at least Firefox 52 or Chrome 57.
 
 <p data-height="600" data-theme-id="26704" data-slug-hash="QpqNVq" data-default-tab="result" data-user="brob" data-embed-version="2" data-pen-title="Grid CMS Interface" class="codepen">See the Pen <a href="http://codepen.io/brob/pen/QpqNVq/">Grid CMS Interface</a> by Bryan Robinson (<a href="http://codepen.io/brob">@brob</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
