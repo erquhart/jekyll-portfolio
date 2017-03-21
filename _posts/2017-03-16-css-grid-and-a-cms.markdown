@@ -7,7 +7,7 @@ layout: post
 description: I love hand crafting layout in CSS Grid. Ask my co-workers. They're tired of hearing about it. What about people who write no CSS, though? Can we use Grid to open up a world of new layout options to CMS users?
 tags:
 - Grid
-featuredImg: images/blog/cms-grid/grid-start.jpg
+featuredImg: images/blog/cms-grid/grid-card.jpg
 
 ---
 
