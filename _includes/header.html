@@ -19,5 +19,19 @@
 
     	</script>
 
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@brob" />
+      {% if page.title %}
+        <meta name="twitter:title" content="{{ page.title }}" />
+      {% endif %}
+      {% if page.description %}
+      <meta name="twitter:description" content="{{ page.description }}" />
+      {% endif %}
+
+      {% if page.featuredImg %}
+        <meta name="twitter:image" content="{{ page.featuredImg }}" />
+      {% endif %}
+
+
     </head>
     <body>
