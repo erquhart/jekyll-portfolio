@@ -123,7 +123,7 @@ description: Our design trends are about to get a facelift. Grid Layout is comin
 
 </div>
 
-<img src="/images/blog/grid-cover/forest-grid.gif" style="width: 80%; margin: 0 auto 20px; display: block;" alt="">
+<img src="/images/blog/grid-cover/forest-grid-opt.gif" style="width: 80%; margin: 0 auto 20px; display: block;" alt="">
 
 <div class="container container-narrow">
 
