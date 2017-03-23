@@ -3,6 +3,7 @@ title: Make a More Flexible Cover Screen with CSS Grid
 categories:
 - Development
 - Design
+- Grid
 layout: interior
 description: Our design trends are about to get a facelift. Grid Layout is coming in the next release of modern browsers. It's important to get a grip on its utility. Let's take a common trend in editorial and marketing design - the "cover page" banner area.
 ---
@@ -122,7 +123,7 @@ description: Our design trends are about to get a facelift. Grid Layout is comin
 
 </div>
 
-<img src="/images/blog/grid-cover/forest-static.jpg" style="width: 80%; margin: 0 auto 20px; display: block;" alt="">
+<img src="/images/blog/grid-cover/forest-grid.gif" style="width: 80%; margin: 0 auto 20px; display: block;" alt="">
 
 <div class="container container-narrow">
 
@@ -151,7 +152,7 @@ description: Our design trends are about to get a facelift. Grid Layout is comin
 <div class="container container-narrow">
     <h2>More examples</h2>
 
-    <p>Here are other screenshots for ways of laying out content in a cover page via the same grid and markup we've used so far. All of these layouts are available to play with <a href="">in my CodePen collection</a>. If you use them in CodePen, keep in mind, you'll need to have a Grid-enabled  browser.</p>
+    <p>Here are other screenshots for ways of laying out content in a cover page via the same grid and markup we've used so far. All of these layouts are available to play with <a href="http://codepen.io/collection/DKgxgx/">in my CodePen collection</a>. If you use them in CodePen, keep in mind, you'll need to have a Grid-enabled  browser.</p>
 
 </div>
 
