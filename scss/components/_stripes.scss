@@ -78,3 +78,34 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
 .projects .stripe {
     align-items: center;
 }
+
+.projects {
+    .stripe {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    &.right {
+      flex-direction: row-reverse;
+    }
+
+    .screenshot {
+      width: 50%;
+      img {
+        display: block;
+        @supports (object-fit: cover) {
+            width: 100%;
+            height: 90vh;
+            object-fit: cover;
+            object-position: top center;
+        }
+      }
+    }
+    .project_info {
+      width: 50%;
+      padding: 10px 30px;
+      box-sizing: border-box;
+    }
+  }
+}

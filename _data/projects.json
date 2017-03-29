@@ -5,7 +5,8 @@
 		"description": "<p>On Operation Broken Silence, an award-winning site design, I offered creative direction, technical planning and information architecture to create a bold site for a Memphis-based non-profit taking on the genocide in the Sudan.</p>
                         <p>OBS hadn't had a web presence of their own and RocketFuel worked together with them to create a high-class, donor-driven site including interactive infographics and placing their video production skills at the forefront.</p>",
 		"image": "/images/projects/obs-logo.png",
-		"url": "http://operationbrokensilence.org"
+		"url": "http://operationbrokensilence.org",
+    "screenshot": "/images/projects/obs.jpg"
 	},
 
 	{
