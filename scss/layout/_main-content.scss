@@ -13,8 +13,8 @@
     @extend %main-headlines;
     @include secondary-font;
     color: $brand;
-    margin-bottom: .8vw;
-    
+    margin-bottom: .25rem;
+
 }
 .secondary-headline {
     @extend %main-headlines;

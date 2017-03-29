@@ -33,10 +33,10 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
     padding: $stripe-padding;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     &_headline {
-        text-align: center;
+        text-align: left;
         color: $stripe-foreground-color;
         font-size: $stripe-headline-font-size;
         margin-bottom: 1rem;

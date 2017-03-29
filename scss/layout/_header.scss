@@ -36,9 +36,9 @@
             justify-content: center;
         }
         a {
-            font-family: 'Open Sans', sans-serif;
             margin-left: 30px;
             font-weight: 100;
+            font-size: calc(.5rem + 1vw);
             @media (max-width: 900px) {
                 font-size: calc(1rem + 1vw);
             }
