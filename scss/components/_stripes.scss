@@ -74,3 +74,7 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
     @extend .stripe;
     @include stripe-theme($stripe-background-secondary-color, $stripe-foreground-secondary-color);
 }
+
+.projects .stripe {
+    align-items: center;
+}

@@ -7,19 +7,19 @@
     }
     .description {
         width: 100%;
-        max-width: 70vw;
     }
     .button {
         align-self: auto;
         width: 100%;
         text-align: center;
     }
-    @media (min-width: 420px) {
+    @media (max-width: 500px) {
         display: flex;
         flex-wrap: wrap;
         .button {
             max-width: 50vw;
         }
+
     }
 
     @include grid-support {
@@ -66,19 +66,24 @@
             margin: 20px;
         }
 
-        .description {
-
-        }
-        &:nth-child(2n) {
-        }
         @include grid-support {
             grid-row: span 1;
             grid-column: span 6;
 
 
 
-            @media (min-width: 450px) and (max-width: 1100px) {
+            @media (min-width: 500px) and (max-width: 1100px) {
                 grid-column: span 3;
+                grid-row: span 2;
+
+                &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(8) {
+                  @include small-item;
+                  grid-row: span 1;
+                }
+                &.promo {
+                  grid-column: span 6;
+                }
+
             }
 
             @media (min-width: 1100px) {
