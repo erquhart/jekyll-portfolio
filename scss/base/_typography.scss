@@ -1,10 +1,12 @@
-@mixin primary-font($weight: 400, $style: normal){
-    font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400');
+
+@mixin primary-font($weight: 300, $style: normal){
+    font-family: 'Merriweather', Georgia, serif;
     font-style: $style;
     font-weight: $weight;
 }
 @mixin secondary-font($weight:400, $style: normal) {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Merriweather', cursive;
     font-style: $style;
     font-weight: $weight;
 }
@@ -12,10 +14,10 @@ em {
     @include primary-font($style: italic);
 }
 strong {
-    @include primary-font($style: bold);
+    @include primary-font($style: bold, $weight: 400);
 }
-$base-font: calc(18px + .5vw);
-$base-line-height: calc(1em + .7vw);
+$base-font: calc(16px + .5vw);
+$base-line-height: calc(1.2em + .75vw);
 
 body {
     @include primary-font;
@@ -31,7 +33,7 @@ h1 {
     @include primary-font;
     font-size: calc(1.3em + 2.5vw);
     line-height: $base-line-height;
-    margin-bottom: calc(.5em + .5vw);
+    margin-bottom: .5rem;
 
 }
 
