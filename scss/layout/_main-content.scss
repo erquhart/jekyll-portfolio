@@ -31,7 +31,9 @@
 
 .about {
     padding: 70px 0;
-
+    &::after {
+        clear: both;
+    }
     .headshot {
         float: left;
         shape-outside: circle();
@@ -42,8 +44,5 @@
         @media (min-width: 600px) {
             width: 20%;
         }
-    }
-    p:last-child {
-      clear: both;
     }
 }
