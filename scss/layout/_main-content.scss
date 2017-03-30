@@ -7,10 +7,8 @@
 }
 
 %main-headlines {
-    text-align: left;
-    @media (min-width: 900px) {
-      text-align: center;
-    }
+    text-align: center;
+
 }
 .main-headline {
     @extend %main-headlines;
@@ -28,6 +26,7 @@
     @include secondary-font;
     color: $brand;
     font-size: calc(1em + 1vw);
+
 }
 
 .about {
