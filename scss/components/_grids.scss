@@ -16,9 +16,7 @@
     @media (max-width: 500px) {
         display: flex;
         flex-wrap: wrap;
-        .button {
-            max-width: 50vw;
-        }
+
 
     }
 
@@ -165,7 +163,7 @@
         display: flex;
         flex-wrap: wrap;
         .button {
-            max-width: 50vw;
+            // max-width: 50vw;
         }
     }
 

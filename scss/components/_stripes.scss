@@ -61,7 +61,8 @@ $stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
         min-width: 300px;
     }
     .button {
-        align-self: center;
+        display: block;
+        text-align: center;
     }
 }
 
