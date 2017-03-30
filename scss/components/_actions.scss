@@ -1,6 +1,6 @@
 .actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .action {
@@ -9,7 +9,7 @@
     @include secondary-font;
     font-size: calc(1.3rem + .5vw);
     color: $brand-light;
-    margin: 10px 20px 10px 0;
+    margin: 10px 30px 10px 0;
     &::first-child {
         margin-left: 0;
     }
