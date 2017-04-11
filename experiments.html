@@ -6,7 +6,7 @@ layout: interior
 
 <section class="grid--simple">
 
-{% for experiment in site.experiments %}
+{% for experiment in site.experiments reversed %}
     <article class="item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} {{ experiment.grid-size }}">
         <h2><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
         <div class="description">
