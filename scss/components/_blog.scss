@@ -4,7 +4,7 @@ $grid-width: 800px;
 
 .date {
     font-style: italic;
-    font-size: calc(.75rem + .5vw);
+    font-size: .8rem;
 }
 
 
@@ -19,7 +19,7 @@ $grid-width: 800px;
     color: $brand-dark;
     h1 {
         margin-bottom: 5px;
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 1.4em;
 
     }
@@ -27,7 +27,7 @@ $grid-width: 800px;
         margin-bottom: 5px;
     }
     h6 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -39,7 +39,7 @@ $grid-width: 800px;
     }
 }
 .caption {
-    font-size: calc(.5rem + .5vw);
+    font-size: .75rem;
     font-style: italic;
     margin-bottom: 10px;
 }
@@ -94,12 +94,12 @@ $column-paddings: ($column-padding * $column-number);
             @supports (display: grid) {
                 @supports not (display: -ms-grid) {
                     p {
-                        font-size: calc(.7rem + .5vw);
+                        font-size: 1rem;
                         line-height: 1.2em;
                         text-align: left;
                     }
                     h2 {
-                        font-size: calc(1.2rem + .5vw);
+                        font-size: 1.4rem;
                         text-transform: uppercase;
                     }
                 }
