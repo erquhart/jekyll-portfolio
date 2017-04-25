@@ -4,6 +4,9 @@
     &-narrow {
         max-width: 950px;
     }
+    @media (max-width: 875px) {
+        width: 90%;
+    }
 }
 
 %main-headlines {
@@ -30,7 +33,7 @@
 }
 
 .about {
-    padding: 70px 0;
+    padding: 1rem 0;
     &::after {
         clear: both;
     }
