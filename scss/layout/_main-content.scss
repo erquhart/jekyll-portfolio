@@ -25,7 +25,7 @@
     @extend %main-headlines;
     @include secondary-font;
     color: $brand;
-    font-size: calc(1em + 1vw);
+    font-size: 1.3rem;
 
 }
 

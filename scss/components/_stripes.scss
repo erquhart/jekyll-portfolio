@@ -4,8 +4,8 @@ $stripe-foreground-color: $brand;
 $stripe-foreground-secondary-color: $brand-accent;
 $stripe-padding: calc(1rem + 2vw) 10%;
 $stripe-font-vw: 1vw;
-$stripe-description-font-size: calc(0.6rem + #{$stripe-font-vw});
-$stripe-headline-font-size: calc(1.7rem + #{$stripe-font-vw});
+$stripe-description-font-size: .8rem;
+$stripe-headline-font-size: 1.8rem;
 
 
 @mixin stripe-theme($background: $stripe-background-color, $foreground: $stripe-foreground-color) {
