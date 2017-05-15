@@ -6,6 +6,11 @@ layout: post-with-grid
 description: With the death of Lella Vignelli last week (Dec. 21, 2016), I read for the first time The Vignelli Canon. The layout of the pages inspired me. I knew that I wanted to give a quick update to some of my blog posts to mirror some of the design from that book -- a book that talks about grids, as well.
 ---
 
+<div style="grid-column: 1 / 6;" class="reference">
+    <h2 style="font-size: 1.3em;">Update May 15, 2017</h2>
+    <p>Since I published this piece, I've since converted even more of my site over to CSS Grid. If you're interested in my take on how to "Fallback" with CSS Grid, check out my post <a href="/blog/2017/01/18/your-code-should-fall-forward/" title="Falling Forward — Rethinking Progressive Enhancement, Graceful Degradation and Developer Morality">Falling Forward — Rethinking Progressive Enhancement, Graceful Degradation and Developer Morality</a> from January.</p>
+</div>
+
 With the death of Lella Vignelli last week (Dec. 21, 2016), I read for the first time The Vignelli Canon.
 
 <aside class="reference">
