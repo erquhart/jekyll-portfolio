@@ -12,8 +12,9 @@
         align-self: auto;
         width: 100%;
         text-align: center;
+
     }
-    @media (max-width: 500px) {
+    @media (min-width: 500px) {
         display: flex;
         flex-wrap: wrap;
 

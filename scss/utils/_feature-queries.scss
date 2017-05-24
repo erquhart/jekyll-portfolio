@@ -1,7 +1,5 @@
 @mixin grid-support() {
-    @supports (display: grid) {
-        @supports not (display: -ms-grid) {
-            @content
-        }
+    @supports (grid-auto-rows: 1px) {
+        @content
     }
 }
