@@ -99,21 +99,24 @@ Edge supports Feature Queries, unlike its predecessor. So, it was able to see my
 
 The Feature Query now looks like this (could be more elegant, but my libsass doesn't like compound Feature Queries right now):
 
+<aside class="subhead">
+    <h2>Update</h2>
+    <p>May 24, 2017</p>
+    <p>Thanks to the excellent <a href="https://twitter.com/gregwhitworth" title="Greg Whitworth's twitter account">@gregwhitworth</a> on Twitter, I have a much better feature query that will allow Edge to see the Grid when the newest version releases. Updated to the right. </p>
+</aside>
+
 {% highlight scss %}
 
-@supports (display: grid) {
-    @supports not (display: -ms-grid) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-row-gap: calc(.8rem + .5vw);
-        > p, iframe, .highlight {
-            grid-column: 3 / span 3;
-            width: auto;
-        }
+@supports (grid-auto-rows: 1px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: calc(.8rem + .5vw);
+    > p, iframe, .highlight {
+        grid-column: 3 / span 3;
+        width: auto;
     }
 }
 
 {% endhighlight %}
 
-
-As usual, thanks Microsoft.
+I originally ended the post by sarcastically saying "Thanks Microsoft." As it turns out, this isn't the worst thing in the world with the May 24th @supports update. So, "Thanks Microsoft for having someone looking out for us."
