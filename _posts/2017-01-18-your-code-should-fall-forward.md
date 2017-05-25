@@ -150,7 +150,7 @@ Let's make an impactful layout for our articles using some fun new code.
 {% highlight scss %}
 
 
-@supports (display: grid) {
+@supports (grid-auto-rows: 1px) {
     @media (min-width: 1100px) {
         .grid {
             display: grid;
@@ -194,7 +194,7 @@ Let's make an impactful layout for our articles using some fun new code.
     <p>Interested in playing with this code? <a href="http://codepen.io/brob/pen/WRoMMy">View it on CodePen</a>. Interested in how CSS Grid works? <a href="/blog/2017/01/12/simple-grid-examples/">Read my simple grid primer</a>. </p>
 </aside>
 
-In the code above, I'm using CSS Feature Queries to identify if a browser supports Grid before using it.
+In the code above, I'm using CSS Feature Queries to identify if a browser supports Grid before using it. By utilizing grid-auto-rows and not just display: grid, I can have Edge ignore it for now, but begin seeing it when it updates in 2017.
 
 With an idea of fallbacks, a developer might try to have Grid be the main layout engine. They might then fallback to flexbox using an @supports _not_ (display: grid) query.
 
