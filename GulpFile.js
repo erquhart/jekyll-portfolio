@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
-    browserSync = require('browser-sync'),
     run = require('gulp-run'),
     runSequence = require('run-sequence'),
     gutil = require('gulp-util');
