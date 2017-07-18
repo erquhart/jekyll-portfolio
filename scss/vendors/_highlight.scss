@@ -34,9 +34,9 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	position: relative;
 	margin: .5em 0;
-	border-left: 10px solid $brand-light;
+	border-left: 10px solid $color-light;
 	background-color: #fdfdfd;
-	background-image: linear-gradient(transparent 50%, transparentize($brand-light, .9) 50%);
+	background-image: linear-gradient(transparent 50%, transparentize($color-light, .9) 50%);
 	background-size: 3em 3em;
 	background-origin: content-box;
 	overflow: visible;

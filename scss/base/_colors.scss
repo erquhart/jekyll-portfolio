@@ -6,5 +6,5 @@ $color-neutral: rgba(239, 246, 224, 1);
 $white: white;
 $black: #222222;
 $color-mid-gray: #7f7f7f;
-$color-dark-gray: darken($brand-gray, 25%);
-$color-light-gray: lighten($brand-gray, 40%);
+$color-dark-gray: darken($color-mid-gray, 25%);
+$color-light-gray: lighten($color-mid-gray, 40%);
