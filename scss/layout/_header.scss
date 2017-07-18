@@ -1,0 +1,16 @@
+$border: $color-accent;
+$spacing: .5rem;
+
+.site-header {
+    border-bottom: 3px solid $border;
+    margin: $spacing;
+    padding-bottom: $spacing;
+    display: flex;
+    justify-content: flex-end;
+
+    &__logo {
+        width: 75px;
+        display: flex;
+        align-items: center;
+    }
+}
