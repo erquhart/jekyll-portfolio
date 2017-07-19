@@ -20,12 +20,10 @@
     }
 
 }
-$base-font: calc(16px + .5vw);
-$base-line-height: calc(1.2em + .75vw);
 
 html, body {
     @include primary-font;
-    @include fontSize(18, 24, 320, 1500);
+    @include fontSize(16, 24, 320, 1500);
     line-height: 1.4em;
 }
 
@@ -37,7 +35,9 @@ strong {
 }
 
 h2, h3, h4, h5, h6 {
-
+    font-size: 1.3rem;
+    line-height: 1.4em;
+    margin-bottom: calc(.5em + .5vw);
 }
 
 h1 {
@@ -49,16 +49,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.4em;
     margin-bottom: calc(.5em + .5vw);
 
 }
 p {
     margin-bottom: 1rem;
-}
-.subhead {
-    font-size: 1.75rem;
-    line-height: 1.4em;
-    text-align: center;
 }
