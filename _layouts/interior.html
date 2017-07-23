@@ -1,6 +1,8 @@
 {% include header.html %}
-    <main class="interior">
-        {% include interior-content-head.html %}
+{% include interior-content-head.html %}
+
+
+    <main class="interior container gap page-indent {{ page.baseLayout }}">
         {{ content }}
     </main>
 {% include footer.html %}

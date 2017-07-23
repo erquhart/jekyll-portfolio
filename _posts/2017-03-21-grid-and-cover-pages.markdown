@@ -4,162 +4,137 @@ categories:
 - Development
 - Design
 - Grid
-layout: interior
+layout: post
 description: Our design trends are about to get a facelift. Grid Layout is coming in the next release of modern browsers. It's important to get a grip on its utility. Let's take a common trend in editorial and marketing design - the "cover page" banner area.
 featuredImg: images/blog/grid-cover/room.jpg
-
+baseLayout: container--right
 ---
 
-<div class="container container-narrow">
-    <p>Our design trends are about to get a facelift. Grid Layout is coming in the next release of modern browsers. It&#39;s important to get a grip on its utility.&nbsp;</p>
+Our design trends are about to get a facelift. Grid Layout is coming in the next release of modern browsers. It's important to get a grip on its utility. 
 
-    <p>Let&#39;s take a common trend in editorial and marketing design: the "cover page" banner area.</p>
+Let's take a common trend in editorial and marketing design: the "cover page" banner area.
 
-    <img src="/images/blog/grid-cover/simple-cover.jpg" alt="">
+<figure class="pull-1"><img src="/images/blog/grid-cover/simple-cover.jpg"></figure>
 
-    <p>At its simplest, this contains five elements: headline, subhead, byline, photo and photo credit.</p>
+At its simplest, this contains five elements: headline, subhead, byline, photo and photo credit.
 
-    <p>This is a bold design pattern.&nbsp;</p>
+This is a bold design pattern. 
 
-    <p>With current CSS, it&#39;s also a static design pattern. Each article detail page is laid out the same. The only difference is the background image.</p>
+With current CSS, it's also a static design pattern. Each article detail page is laid out the same. The only difference is the background image.
 
-    <p>With CSS Grid, we take similar markup on each page and can apply unique layout. This opens the door to art direction for each article.&nbsp;</p>
+With CSS Grid, we take similar markup on each page and can apply unique layout. This opens the door to art direction for each article. 
 
-    <p><em>Author&#39;s note: For simplification the examples in this article won&#39;t use Feature Queries to ensure support. See my post on <a href="/blog/2017/01/18/your-code-should-fall-forward/">Feature Queries for more information on implementing Grid while supporting non-compliant browsers</a>.</em></p>
+_Author's note: For simplification the examples in this article won't use Feature Queries to ensure support. See my post on [Feature Queries for more information on implementing Grid while supporting non-compliant browsers](/blog/2017/01/18/your-code-should-fall-forward/)._
 
-    <p><em>Second author&#39;s note: I can envision some great CMS interfaces using this method. Selectable grid areas in a CMS would be amazing and super flexible.</em></p>
+_Second author's note: I can envision some great CMS interfaces using this method. Selectable grid areas in a CMS would be amazing and super flexible._
 
-    <p>To get to the point of flexibility, we first have to set up our template. &nbsp;The .headline, .subhead and .secondary are all children under our grid container.</p>
+To get to the point of flexibility, we first have to set up our template.  The .headline, .subhead and .secondary are all children under our grid container.
 
-    <img src="/images/blog/grid-cover/grid-setup.gif" alt="">
+<figure class="float--left">
+    <img src="/images/blog/grid-cover/grid-setup.gif">
+</figure>
 
-    {% highlight scss %}
-.cover {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh; // Always 100% of the viewport's height
-    padding: 20px;
-
-    display: grid;
-    grid-template-rows:    1fr 1fr 1fr 1fr 1fr; // 5 rows
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; // 5 columns
-    grid-gap: 5px;
-    // 5x5 works well for centering
-}
+{% highlight scss %}
+    .cover {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh; // Always 100% of the viewport's height
+        padding: 20px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; // 5 rows
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; // 5 columns
+        grid-gap: 5px; // 5x5 works well for centering
+    }
 {% endhighlight %}
 
+After we write our HTML and set up our grid in CSS, we're ready to place our content. Here's an example of the basic "cover" layout:
 
-    <p>After we write our HTML and set up our grid in CSS, we&#39;re ready to place our content. Here&#39;s an example of the basic "cover" layout:</p>
+![](/images/blog/grid-cover/grid-easy-image.jpg)
 
+To layout a headline, subhead and caption this simply, Grid may be a bit of overkill. Here's the code for the image above:
 
-
-    <img src="/images/blog/grid-cover/grid-easy-image.jpg" alt="">
-
-    <p>To layout a headline, subhead and caption this simply, Grid may be a bit of overkill. Here's the code for the image above:</p>
-
-    {% highlight scss %}
-
-
-.headline {
-    grid-row: 3;
-    grid-column: 2 / 5;
-    text-align: center;
-    align-self: center;
-    align-self: end;
-}
-.subhead {
-    grid-row: 4;
-    grid-column: 2 / 5;
-    text-align: center;
-}
-.secondary {
-    grid-column: 4 / 6;
-    text-align: right;
-}
-
-    {% endhighlight %}
-
-    <p>Flexbox and absolute positioning would probably have made this easier. This setup also allows us to use the 5x5 grid to create new and powerful combinations based on the same markup.</p>
-
-
-    <p>We can allow our image to dictate the needs of our content. We can also allow the text to speak to our articles theme. In other words, we can art direct on the web (<a href="http://jensimmons.com/presentation/revolutionize-your-page-real-art-direction-web">inspiration from Jen Simmons for this language</a>).</p>
-
-
-    <h2>Example 1: Skyline</h2>
-
-
-    <img src="/images/blog/grid-cover/skyline-image.jpg" alt="">
-
-    <p>In our first example, we&#39;ve got a beautiful shot of a city skyline blazing in the night.</p>
-
-    <p>There would still be impact if we left our headline in its default position, but the headline will compete with the image. What if the text could mirror the shape of a skyscraper? What if it could also fit within the negative space afforded by the walkway?</p>
-
-    {% highlight scss %}
-.headline {
-    grid-row: 2 / 6;
-    grid-column: 3 / 4;
-    text-align: center;
-    align-self: end;
-}
-.secondary {
-    grid-row: 5 / 6;
-    grid-column: 4 / 6;
-    text-align: right;
-}
-    {% endhighlight %}
-
-</div>
-
-<img src="/images/blog/grid-cover/grid-center-column.jpg" alt="">
-
-<div class="container container-narrow">
-    <h2>Example 2: Connecting eye line to headline</h2>
-
-    <p>The images we choose can also help direct a user's eye where we want it to go.</p>
-
-    <img src="/images/blog/grid-cover/forest-image.jpg" alt="">
-
-    <p>Not only does this image have a striking subject and color scheme, it also places its subject in an awkward spot for designers.</p>
-
-    <p>In this example, we can eschew the tradition of placing our headline at the center or on the left side of the screen. Instead, we work with our image to allow the woman's eye line to connect the user to our headline in an atypical design.</p>
-
-</div>
-
-<img src="/images/blog/grid-cover/forest-grid-opt.gif" style="width: 80%; margin: 0 auto 20px; display: block;" alt="">
-
-<div class="container container-narrow">
-
-    <p>Again, we can simply change our CSS to change our layout. No need to modify markup.</p>
-
-    {% highlight scss %}
-.headline {
-    grid-row: 2 / 5;
-    grid-column: 5 / 6;
-    text-align: right;
-    font-family: 'Stalemate', cursive;
-}
-.subhead {
-    grid-column: 3 / 6;
-    grid-row: 6;
-    text-align: right;
-}
-.secondary {
-    grid-row: 6;
-    grid-column: 1 / 3;
-}
+{% highlight scss %}
+    .headline {
+        grid-row: 3;
+        grid-column: 2 / 5;
+        text-align: center;
+        align-self: center;
+        align-self: end;
+    }
+    .subhead {
+        grid-row: 4;
+        grid-column: 2 / 5;
+        text-align: center;
+    }
+    .secondary {
+        grid-column: 4 / 6;
+        text-align: right;
+    }
 {% endhighlight %}
-</div>
 
+Flexbox and absolute positioning would probably have made this easier. This setup also allows us to use the 5x5 grid to create new and powerful combinations based on the same markup.
 
-<div class="container container-narrow">
-    <h2>More examples</h2>
+We can allow our image to dictate the needs of our content. We can also allow the text to speak to our articles theme. In other words, we can art direct on the web ([inspiration from Jen Simmons for this language](http://jensimmons.com/presentation/revolutionize-your-page-real-art-direction-web)).
 
-    <p>Here are other screenshots for ways of laying out content in a cover page via the same grid and markup we've used so far. All of these layouts are available to play with <a href="http://codepen.io/collection/DKgxgx/">in my CodePen collection</a>. If you use them in CodePen, keep in mind, you'll need to have a Grid-enabled  browser.</p>
+## Example 1: Skyline
 
-</div>
+![](/images/blog/grid-cover/skyline-image.jpg)
 
-<div class="container grid-thirds">
-    <img src="/images/blog/grid-cover/room.jpg" alt="">
-    <img src="/images/blog/grid-cover/architecture.jpg" alt="">
+In our first example, we've got a beautiful shot of a city skyline blazing in the night.
 
-</div>
+There would still be impact if we left our headline in its default position, but the headline will compete with the image. What if the text could mirror the shape of a skyscraper? What if it could also fit within the negative space afforded by the walkway?
+
+{% highlight scss %}
+    .headline {
+        grid-row: 2 / 6;
+        grid-column: 3 / 4;
+        text-align: center;
+        align-self: end;
+    }
+    .secondary {
+        grid-row: 5 / 6;
+        grid-column: 4 / 6;
+        text-align: right;
+    }
+
+{% endhighlight %}
+![](/images/blog/grid-cover/grid-center-column.jpg)
+
+## Example 2: Connecting eye line to headline
+
+The images we choose can also help direct a user's eye where we want it to go.
+
+![](/images/blog/grid-cover/forest-image.jpg)
+
+Not only does this image have a striking subject and color scheme, it also places its subject in an awkward spot for designers.
+
+In this example, we can eschew the tradition of placing our headline at the center or on the left side of the screen. Instead, we work with our image to allow the woman's eye line to connect the user to our headline in an atypical design.
+
+![](/images/blog/grid-cover/forest-grid-opt.gif)
+
+Again, we can simply change our CSS to change our layout. No need to modify markup.
+
+{% highlight scss %}
+    .headline {
+        grid-row: 2 / 5;
+        grid-column: 5 / 6;
+        text-align: right;
+        font-family: 'Stalemate', cursive;
+    }
+    .subhead {
+        grid-column: 3 / 6;
+        grid-row: 6;
+        text-align: right;
+    }
+    .secondary {
+        grid-row: 6;
+        grid-column: 1 / 3;
+    }
+
+{% endhighlight %}
+
+## More examples
+
+Here are other screenshots for ways of laying out content in a cover page via the same grid and markup we've used so far. All of these layouts are available to play with [in my CodePen collection](http://codepen.io/collection/DKgxgx/). If you use them in CodePen, keep in mind, you'll need to have a Grid-enabled browser.
+
+![](/images/blog/grid-cover/room.jpg) ![](/images/blog/grid-cover/architecture.jpg)

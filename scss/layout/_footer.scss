@@ -1,8 +1,8 @@
 .footer {
     margin: 0 $spacing $spacing;
     // background-color: $color-accent;
-    border-top: 4px solid $color-accent;
-    border-bottom: 4px solid $color-accent;
+    border-top: 3px solid $color-accent;
+    border-bottom: 3px solid $color-accent;
 
     padding: $spacing 0;
 
@@ -15,7 +15,7 @@
     display: grid;
     padding-right: $spacing;
     margin-right: $spacing;
-    border-right: 4px solid $color-light;
+    border-right: 3px solid $color-light;
     grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
     &__header {

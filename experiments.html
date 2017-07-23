@@ -4,10 +4,9 @@ permalink: "/experiments/"
 layout: interior
 ---
 
-<section class="grid--simple">
-
+<section class="item--center pull-2 grid--simple">
 {% for experiment in site.experiments reversed %}
-    <article class="item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} {{ experiment.grid-size }}">
+    <article class="stripe item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} container--{% cycle 'right', 'center', 'left' %} {{ experiment.grid-size }}">
         <h2><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
         <div class="description">
             <p>{{ experiment.description }}</p>
@@ -15,9 +14,4 @@ layout: interior
         </div>
     </article>
 {% endfor %}
-    <article class="item small bright">
-        <h2><a href="http://codepen.io/brob/">CodePen Experiments</a></h2>
-        <p>I experiment frequently on CodePen. Totally worth a look.</p>
-        <a href="http://codepen.io/brob/">See the Pens &raquo;</a>
-    </article>
 </section>

@@ -1,8 +1,7 @@
-<section class="projects">
-    <h2 class="section-header">A small selection of my projects</h2>
+<section class="projects pull-2">
         {% for project in site.data.projects %}
 
-            <article class="stripe {% cycle 'neutral', 'primary' %} {% cycle 'left', 'right' %}">
+            <article class="stripe item--center pull-1 {% cycle 'neutral', 'primary' %} {% cycle 'left', 'right' %}">
                 <aside class="screenshot"><img src="{% if project.screenshot %}{{ project.screenshot }}{% else %}https://placekitten.com/1000/800{% endif %}"></aside>
                 <main class="project_info">
                   {% if project.image %}<figure><img class="stripe_image" src="{{ project.image }}" alt="{{ project.title }}"></figure>{% endif %}
@@ -13,5 +12,4 @@
             </article>
 
         {% endfor %}
-
 </section>
