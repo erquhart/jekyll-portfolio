@@ -4,18 +4,27 @@
     border-top: 3px solid $color-accent;
     border-bottom: 3px solid $color-accent;
 
+
+
+
+    @media (min-width: 550px) {
+        display: grid;
+    }
+    grid-template-columns: 35vw 1fr;
     padding: $spacing 0;
 
-    display: grid;
-    grid-template-columns: 35vw 1fr;
 }
 
 
 .sides {
     display: grid;
-    padding-right: $spacing;
-    margin-right: $spacing;
-    border-right: 3px solid $color-light;
+    margin-bottom: $spacing;
+    @media (min-width: 550px) {
+        padding-right: $spacing;
+        margin-right: $spacing;
+        margin-bottom: 0;
+        border-right: 3px solid $color-light;
+    }
     grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
     &__header {
