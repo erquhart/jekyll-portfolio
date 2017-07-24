@@ -40,8 +40,17 @@
 
         <header class="site-header">
             <a class="site-header__logo" href="/">{% include header-logo.html %}</a>
-            <nav class="site-nav">
-                {% include nav.html %}
+            <nav class="nav-container">
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle"><span class="toggle-words">Menu</span></label>
+                <div class="overlay"></div>
+                <div class="site-nav">
+
+                    {% include nav.html %}
+
+                </div>
+
+
             </nav>
 
         </header>
