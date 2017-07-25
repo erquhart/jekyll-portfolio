@@ -17,13 +17,19 @@
 
 
 .sides {
+    display: flex;
+    margin-bottom: $spacing * 2;
+
     display: grid;
-    margin-bottom: $spacing;
+
     @media (min-width: 550px) {
-        padding-right: $spacing;
-        margin-right: $spacing;
-        margin-bottom: 0;
-        border-right: 3px solid $color-light;
+        @supports (grid-auto-rows: 1px) {
+
+            padding-right: $spacing;
+            margin-right: $spacing;
+            margin-bottom: 0;
+            border-right: 3px solid $color-light;
+        }
     }
     grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
