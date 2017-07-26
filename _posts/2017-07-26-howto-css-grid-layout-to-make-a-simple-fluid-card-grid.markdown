@@ -6,7 +6,7 @@ categories:
 - Grid
 layout: post
 description: In this tutorial, I'm going to show you how to take one of the most common tropes of web design -- the card grid -- and make it fluid. 
-featuredImg: images/blog/fluid-grid/featured-grid.png
+featuredVid: images/blog/fluid-grid/fluid-grid-vid.mp4
 baseLayout: container--right
 ---
 
@@ -16,7 +16,13 @@ We could build this via a float- or flex-based grid and a handful of breakpoints
 
 Grid can do so much more than recreating old design patterns. If you're looking for a good place to start, though, this is the best introduction to its power.
 
-![Fluid Grid gif](/images/blog/fluid-grid/fluid-grid.gif)
+<div class="pull-2">
+<video autoplay loop style="width: 100%;">
+  <source src="/images/blog/fluid-grid/fluid-grid-vid.mp4" type="video/mp4">
+</video>
+
+<!-- <img src="/images/blog/fluid-grid/fluid-grid.gif" alt="Fluid Grid gif"> -->
+</div>
 
 ## Step 1: Create your markup
 
@@ -24,6 +30,7 @@ In this example, I've got a simple card with a title, photo, description and lin
 
 Place all the .card items inside a .card-container element.
 
+<div class="pull-1">
 {% highlight html %}
 <section class="card-container">
     <article class="card">
@@ -40,6 +47,7 @@ Place all the .card items inside a .card-container element.
     </article>
 </section>
 {% endhighlight %}
+</div>
 
 ## Step 2: Visually style your cards
 
@@ -124,7 +132,7 @@ Grid-gap will place a space between the tracks of our grid (columns and rows). T
 }
 {% endhighlight %}
 
-A fluid, responsive grid created with no breakpoints.
+And voila! A fluid, responsive grid created with no breakpoints.
 
 Below is the [CodePen](https://codepen.io/brob/pen/MvwbMa?editors=1100) that contains this example in its entirety. If you have any questions, post them in the comments or feel free to contact me [on Twitter](http://twitter.com/brob/). If you're interest in implementing Grid and still supporting older browsers, [take a look at this post](/blog/2017/01/18/your-code-should-fall-forward/).
 

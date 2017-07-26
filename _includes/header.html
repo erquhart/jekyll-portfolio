@@ -31,8 +31,10 @@
       {% if page.featuredImg %}
         <meta name="twitter:image" content="{{ site.url }}{{ page.featuredImg }}" />
       {% endif %}
-
-
+      {% if page.featuredVid %}
+        <meta name="twitter:card" content="player" />
+        <meta name="twitter:player" content="{{ site.url }}{{ page.featuredVid }}" />
+      {% endif %}
     </head>
     <body>
 
