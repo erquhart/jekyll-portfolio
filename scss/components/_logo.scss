@@ -1,12 +1,14 @@
-
+.logo {
+    max-width: 300px;
+}
 .angle {
-    fill: $brand-accent;
+    fill: $color-accent;
 
 }
 .top {
-    fill: $brand;
+    fill: $color-brand;
 
 }
 .bottom {
-    fill: $brand;
+    fill: $color-brand;
 }

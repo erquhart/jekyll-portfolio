@@ -1,14 +1,19 @@
+$spacing: .75rem;
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: $brand-neutral;
-    color: $dark-gray;
+    color: $color-dark-gray;
 }
 
 a {
     transition: color .5s ease-out;
     text-decoration: none;
-    color: $brand-accent;
+    color: $color-accent;
     &:hover {
-        color: $brand;
+        color: $color-brand;
     }
 }
 

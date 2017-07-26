@@ -4,10 +4,9 @@ permalink: "/blog/"
 layout: interior
 ---
 
-<section class="posts">
 
 {% for post in site.posts %}
-    <article class="stripe {% cycle 'neutral', 'primary' %}">
+    <article class="stripe {% cycle 'neutral', 'primary', 'deep' %} item--{% cycle 'right', 'center', 'left', 'center' %}">
         <time class="date">{{ post.date | date:"%d %b, %Y" }}</time>
         <h3 class="stripe_headline"><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <div class="stripe_description">
@@ -16,4 +15,3 @@ layout: interior
         </div>
     </article>
 {% endfor %}
-</section>

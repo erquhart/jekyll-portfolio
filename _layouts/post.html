@@ -1,16 +1,11 @@
 {% include header.html %}
-    {% include interior-head.html %}
+{% include interior-content-head.html %}
 
-    <main class="interior">
-
-
-        {% include interior-content-head.html %}
-        <main class="container container-narrow">
-            {{ content | markdownify }}
-        </main>
+    <main class="container page-indent {{ page.baseLayout }}">
+        {{ content | markdownify }}
         {% unless page.comments == "off" %}
 
-        <aside class="comments container container-narrow">
+        <aside class="comments">
             <div id="disqus_thread"></div>
         </aside>
 

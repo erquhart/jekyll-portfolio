@@ -26,7 +26,7 @@ gulp.task('img-opt', function() {
 gulp.task('sass', function() {
    return gulp.src('scss/**/*.scss')
        .pipe(sass().on('error', sass.logError))
-       .pipe(autoprefixer())
+       .pipe(autoprefixer({grid: false}))
        .pipe(cleanCSS())
        .pipe(gulp.dest('./'))
 });

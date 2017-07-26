@@ -1,36 +1,103 @@
 .footer {
+    margin: 0 $spacing $spacing;
+    // background-color: $color-accent;
+    border-top: 3px solid $color-accent;
+    border-bottom: 3px solid $color-accent;
+
+
+
+
+    @media (min-width: 550px) {
+        display: grid;
+        align-items: start;
+    }
+    grid-template-columns: 35vw 1fr;
+    padding: $spacing 0;
+
+}
+
+
+.sides {
     display: flex;
-    justify-content: space-between;
-    background-color: darken($brand, 10%);
-    padding: 10px;
+    margin-bottom: $spacing * 2;
+
+    display: grid;
+    align-items: start;
+
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    &__header {
+        grid-column: span 2;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__item {
+        list-style: none;
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+}
+
+.footer-large {
+    display: flex;
+    align-self: end;
+    padding: 0 $spacing $spacing;
+    background-image: linear-gradient(transparent, transparentize($color-light, .7));
+    @media (min-width: 550px) {
+        @supports (grid-auto-rows: 1px) {
+
+            padding-left: $spacing;
+            margin-left: $spacing;
+            margin-bottom: 0;
+            // border-left: 3px solid $color-light;
+        }
+    }
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a path {
-        transition: .3s ease-out;
-    }
-    svg {
-        height: 55px;
-        width: 55px;
+    writing-mode: vertical-lr;
+    font-weight: 100;
+    display: none;
+    flex-direction: column;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    a {
+        color: $color-brand;
         margin: 0 10px;
     }
-    g, path {
-        fill: $brand-light;
+
+
+}
+
+.articles {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.article-list {
+
+    &__item {
+        font-size: .8rem;
+
     }
-    a:hover path {
-        fill: darken($brand-light, 20%);
+    &__headline {
+        font-size: 1rem;
     }
 
 }
-.footer-logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 15px 20px;
-    .top {
-        fill: $brand-light;
+
+.footer__contact {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+
+    p {
+        font-size: .8rem;
     }
+}
+.copyright {
+    text-align: right;
+    font-size: .7rem;
+    padding: 0 $spacing $spacing;
 }
