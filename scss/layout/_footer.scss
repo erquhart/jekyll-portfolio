@@ -9,6 +9,7 @@
 
     @media (min-width: 550px) {
         display: grid;
+        align-items: start;
     }
     grid-template-columns: 35vw 1fr;
     padding: $spacing 0;
@@ -21,16 +22,9 @@
     margin-bottom: $spacing * 2;
 
     display: grid;
+    align-items: start;
 
-    @media (min-width: 550px) {
-        @supports (grid-auto-rows: 1px) {
 
-            padding-right: $spacing;
-            margin-right: $spacing;
-            margin-bottom: 0;
-            border-right: 3px solid $color-light;
-        }
-    }
     grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
     &__header {
@@ -50,8 +44,17 @@
 .footer-large {
     display: flex;
     align-self: end;
-    padding: 0 $spacing;
+    padding: 0 $spacing $spacing;
     background-image: linear-gradient(transparent, transparentize($color-light, .7));
+    @media (min-width: 550px) {
+        @supports (grid-auto-rows: 1px) {
+
+            padding-left: $spacing;
+            margin-left: $spacing;
+            margin-bottom: 0;
+            // border-left: 3px solid $color-light;
+        }
+    }
 }
 
 .socials {
