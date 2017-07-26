@@ -2,4 +2,3 @@ node_modules/
 _site/
 *.css
 style.css
-*.lock
