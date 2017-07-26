@@ -6,7 +6,7 @@ categories:
 - Grid
 layout: post
 description: In this tutorial, I'm going to show you how to take one of the most common tropes of web design -- the card grid -- and make it fluid. 
-featuredVid: images/blog/fluid-grid/fluid-grid-vid.mp4
+featuredVid: /files/fluid-grid-vid.mp4
 baseLayout: container--right
 ---
 
@@ -18,7 +18,7 @@ Grid can do so much more than recreating old design patterns. If you're looking 
 
 <div class="pull-2">
 <video autoplay loop style="width: 100%;">
-  <source src="/images/blog/fluid-grid/fluid-grid-vid.mp4" type="video/mp4">
+  <source src="/files/fluid-grid-vid.mp4" type="video/mp4">
 </video>
 
 <!-- <img src="/images/blog/fluid-grid/fluid-grid.gif" alt="Fluid Grid gif"> -->
