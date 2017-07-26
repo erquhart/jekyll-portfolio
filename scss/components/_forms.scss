@@ -1,0 +1,28 @@
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid $color-mid-gray;
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    color: $color-mid-gray;
+    margin-bottom: $spacing;
+}
+label {
+    font-size: .8rem;
+    color: $color-dark-gray;
+    display: block;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: $color-accent;
+    padding: 10px 25px;
+    color: $white;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    transition: .3s ease-out;
+    &:hover {
+        background-color: darken($color-accent, 15%);
+    }
+}
