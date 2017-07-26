@@ -16,7 +16,5 @@
     "gulp-run": "^1.7.1",
     "run-sequence": "^1.2.2"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
