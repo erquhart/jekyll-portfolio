@@ -13,7 +13,7 @@ baseLayout: container--right
 
 In this tutorial, I'm going to show you how to take one of the most common tropes of web design -- the card grid -- and make it fluid. 
 
-We could build this via a float- or flex-based grid and a handful of breakpoints. Why deal with breakpoints of Grid Layout can handle everything for us?
+We could build this via a float- or flex-based grid and a handful of breakpoints. Why deal with breakpoints if Grid Layout can handle everything for us?
 
 Grid can do so much more than recreating old design patterns. If you're looking for a good place to start, though, this is the best introduction to its power.
 
