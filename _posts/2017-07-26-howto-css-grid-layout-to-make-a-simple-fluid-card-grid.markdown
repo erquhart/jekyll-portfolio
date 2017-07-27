@@ -6,7 +6,8 @@ categories:
 - Grid
 layout: post
 description: In this tutorial, I'm going to show you how to take one of the most common tropes of web design -- the card grid -- and make it fluid. 
-featuredVid: /files/fluid-grid-vid.mp4
+featuredImg: /images/blog/fluid-grid/featured-grid.png
+featuredLarge: True
 baseLayout: container--right
 ---
 
