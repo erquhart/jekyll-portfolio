@@ -1,5 +1,5 @@
 ---
-title: A CSS-Only Mobile slide-out navigation
+title: A CSS-Only Mobile Off Canvas Navigation
 categories:
 - Development
 - Design
