@@ -60,7 +60,7 @@ We start with our initial state. In the case of a mobile nav it shouldn't be sho
 
 To check the state of #nav-toggle, we'll use the :checked pseudo class.
 
-{% highlight CSS %}
+{% highlight SCSS %}
 #nav-toggle ~ .nav-list {
     display: none; // Initial state
 }
@@ -75,7 +75,7 @@ This is where the "for" attribute on the label comes in handy. I've never seen a
 
 This is where preference you can deviate. Make it the mobile nav style you like best. You will need to change the `<label>`'s display property from "inline" to "block." Past that, I put my money on the word "Menu" and not a hamburger Icon, with a simple border style.
 
-{% highlight CSS %}
+{% highlight SCSS %}
 #nav-toggle ~ label {
     display: block;
 
@@ -93,7 +93,7 @@ This is where preference you can deviate. Make it the mobile nav style you like 
 
 While a show/hide navigation would work, "off-canvas" navigation is still in vogue. So, we'll take our actual navigation and move it to the right out of the visible viewport.
 
-{% highlight CSS %}
+{% highlight SCSS %}
 .nav-list {
     position: fixed; // Absolute positioning would work as well
     right: -100%;
@@ -113,7 +113,7 @@ I'm not great with animation, but I know animation is key to a good user interfa
 
 To do this, we'll use CSS transform's translateX function and a nice bouncy transition. For consistency, you'll want to use the same movement and transition on the label AND .nav-list.
 
-{% highlight CSS %}
+{% highlight SCSS %}
 #nav-toggle ~ .nav-list, #nav-toggle ~ label {
 	// Nice bouncy transition
     transition: .5s transform;
