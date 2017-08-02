@@ -73,7 +73,7 @@ Now, we have state built into our CSS for our navigation. All we have left is to
 
 This is where the "for" attribute on the label comes in handy. I've never seen a mobile navigation button with a checkbox. So first, we'll hide the checkbox and do our main styling on the label. This work is usually done on an anchor tag.
 
-This is where preference you can deviate. Make it the mobile nav style you like best. You will need to change the <label>'s display property from "inline" to "block." Past that, I put my money on the word "Menu" and not a hamburger Icon, with a simple border style.
+This is where preference you can deviate. Make it the mobile nav style you like best. You will need to change the `<label>`'s display property from "inline" to "block." Past that, I put my money on the word "Menu" and not a hamburger Icon, with a simple border style.
 
 {% highlight CSS %}
 #nav-toggle ~ label {
