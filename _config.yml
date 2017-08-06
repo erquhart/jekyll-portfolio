@@ -26,6 +26,13 @@ author_email: bryanlrobinson@gmail.com
 url: http://bryanlrobinson.com/
 permalink: "/blog/:year/:month/:day/:title/"
 markdown: kramdown
+defaults:
+    -
+        scope:
+            path: ""      # empty string for all files
+            type: posts   # limit to posts
+        values:
+            is_post: true # automatically set is_post=true for all posts
 highlight_options:
   linenos: true
 exclude:
