@@ -4,6 +4,7 @@ categories:
 - Design
 - Grid
 - Tutorial
+- CSS
 layout: post-with-grid
 description: Grid is an amazing new CSS Specification coming to major browsers in 2017. When it’s ready for use in production, it’s going to drastically change the way we do layout on the web. Currently, there’s no real browser support. Edge and IE10/11 "support" grid, but they implemented an early version of the specification and it’s significantly broken.
 ---
