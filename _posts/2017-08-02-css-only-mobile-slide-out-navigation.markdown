@@ -5,6 +5,7 @@ categories:
 - Design
 - CSS
 - Tutorial
+- CSS Can Do What
 layout: post
 description: A tutorial on creating a mobile off-canvas navigation with only CSS and HTML.
 featuredImg: /images/blog/mobile-nav/mobile-nav-static.png

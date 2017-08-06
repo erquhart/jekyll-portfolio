@@ -3,6 +3,7 @@ title: CSS Shapes — Let the Text Flow Around You
 date: 2016-05-09 00:00:00 Z
 categories:
 - Design
+- Tutorial
 layout: post
 description: There’s magic in the air around CSS right now. There’s so much new to
   be excited about. One simple thing that you should get excited about is the CSS

@@ -2,6 +2,8 @@
 title: Falling Forward — Rethinking Progressive Enhancement, Graceful Degradation and Developer Morality
 categories:
 - Development
+- Grid
+- Tutorial
 layout: post-with-grid
 description: Forget what you know about Graceful Degradation. Forget what you know about Developer Convenience. Forget what you know about Progressive Enhancement. Instead of arguing over these terms, we should focus on how to change our culture. Create "fallforwards" not "fallbacks."
 featuredImg: images/blog/fall-forward/full-grid.png

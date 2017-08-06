@@ -1,0 +1,17 @@
+---
+title: Blog Categories
+permalink: "/categories/"
+layout: interior
+---
+
+<section class="item--center pull-2 grid--simple">
+{% for experiment in site.categories reversed %}
+    <article class="stripe item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} container--{% cycle 'right', 'center', 'left' %} {{ experiment.grid-size }}">
+        <h2><a href="{{ experiment.url }}">{{ experiment.title }}</a></h3>
+        <div class="description">
+            <p>{{ experiment.description }}</p>
+            <a href="{{ experiment.url }}" title="{{ experiment.title }}">Read More &raquo;</a>
+        </div>
+    </article>
+{% endfor %}
+</section>

@@ -13,6 +13,10 @@ collections:
     title: Presentations
     output: true
     permalink: "/speaking/:path/"
+  category:
+      title: category
+      output: true
+      permalink: "/category/:path/"
   uploads:
     title: Uploads
     output: true
