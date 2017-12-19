@@ -4,7 +4,7 @@ input[type="text"], input[type="email"], textarea {
     display: block;
     width: 100%;
     font-size: 1.1rem;
-    color: $color-mid-gray;
+    color: $color-dark-gray;
     margin-bottom: $spacing;
 }
 label {
@@ -15,7 +15,7 @@ label {
 
 input[type="submit"] {
     display: block;
-    background-color: $color-accent;
+    background-color: $color-brand;
     padding: 10px 25px;
     color: $white;
     font-size: 1rem;
@@ -23,6 +23,6 @@ input[type="submit"] {
     cursor: pointer;
     transition: .3s ease-out;
     &:hover {
-        background-color: darken($color-accent, 15%);
+        background-color: darken($color-brand, 15%);
     }
 }

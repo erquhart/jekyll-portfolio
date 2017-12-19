@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
-        <link rel="stylesheet" href="/style.css">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+ 
         <script>
     		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +44,7 @@
 
 
         <header class="site-header">
-            <a class="site-header__logo" href="/">{% include header-logo.html %}</a>
+            <a class="site-header__logo" title="Bryan L. Robinson dot com logo and home link" href="/">{% include header-logo.html %}</a>
             <nav class="nav-container">
                 <input type="checkbox" id="nav-toggle">
                 <label for="nav-toggle"><span class="toggle-words">Menu</span></label>
