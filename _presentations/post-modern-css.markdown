@@ -13,6 +13,5 @@ If you’ve been focused on other important skills in the past 3 years, you’ve
 
 This workshop will cover the history of CSS and then will go into a deep dive into Flexbox, CSS Grid, CSS shapes, Sass, etc. with practical examples and tutorials of each.
 
-This workshop is targeted toward developers who have grown dependent on Bootstrap and Foundation for their CSS knowledge. It’s time to come back into the fold and reclaim the third leg of the basic Web tripod!
+This presentation is targeted toward developers who have grown dependent on Bootstrap and Foundation for their CSS knowledge. It’s time to come back into the fold and reclaim the third leg of the basic Web tripod!
 
-If you have any questions, let me know in the comments below.

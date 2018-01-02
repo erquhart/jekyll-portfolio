@@ -1,0 +1,53 @@
+---
+title: Speaking Topics and Upcoming Events
+permalink: "/speaking/"
+layout: interior
+comments: 'off'
+baseLayout: container--center
+---
+
+
+
+<section class="item--center pull-2 grid--simple">
+    {% for presentation in site.presentations reversed %}
+        <article class="stripe item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} container--{% cycle 'right', 'center', 'left' %} {{ presentation.grid-size }}">
+            <h2><a href="{{ presentation.url }}">{{ presentation.title }}</a></h3>
+            <div class="description">
+                <p>{{ presentation.description }}</p>
+                <a href="{{ presentation.url }}" title="{{ presentation.title }}">Read More &raquo;</a>
+            </div>
+        </article>
+    {% endfor %}
+</section>
+    
+<form netlify netlify-honeypot="bot_capture" name="speaking" action="/thanks/">
+    <label for="full_name">Full Name</label>
+    <input type="text" name="full_name" id="full_name">
+
+    <label for="__replyto">Email Address</label>
+    <input type="email" name="__replyto" id="__replyto">
+
+    <label for="organization">Conference or Company</label>
+    <input type="email" name="organization" id="organization">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" cols="80"></textarea>
+    
+    <input type="hidden" name="page" id="page" value="{{ page.url }}">
+    <div style="display: none;">
+        <label for="bot_capture">Don't fill this out</label><input name="bot_capture" type="text">
+    </div>
+    <input type="submit" value="Send Email">
+</form>
+
+
+
+## Invite me to speak at your conference
+
+My current presentations are:
+
+* Post-Modern CSS
+
+* You're a Designer, I Promise
+* CSS Can Do What?!
+* Getting Started in CSS Grid Layout
