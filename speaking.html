@@ -9,6 +9,7 @@ baseLayout: container--full
 <style>
 
     .speaking-grid {
+        grid-row: 1;
         grid-column: 1 / 5;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
@@ -16,25 +17,20 @@ baseLayout: container--full
     }
 
     .speaking-contact {
+        grid-row: 1;
         grid-column: 5 / 7;
         position: sticky;
         top: 10px;
         align-self: start;
     }
+    @media (max-width: 725px) {
+        .container--full {
+            display: block;
+        }
+    }
 </style>
 
-<main class="speaking-grid">
-        {% for presentation in site.presentations reversed %}
-            <article class="stripe item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} container--{% cycle 'right', 'center', 'left' %} {{ presentation.grid-size }}">
-                <h2><a href="{{ presentation.url }}">{{ presentation.title }}</a></h3>
-                <div class="description">
-                    <p>{{ presentation.description }}</p>
-                    <a href="{{ presentation.url }}" title="{{ presentation.title }}">Read More &raquo;</a>
-                </div>
-            </article>
-        {% endfor %}
-</main>
-   
+
 
 <form class="speaking-contact" netlify netlify-honeypot="bot_capture" name="speaking" action="/thanks/">
     <h2>Invite me to speak</h2>
@@ -61,3 +57,18 @@ baseLayout: container--full
     </div>
     <input type="submit" value="Start the Conversation">
 </form>
+
+
+
+<main class="speaking-grid">
+        {% for presentation in site.presentations reversed %}
+            <article class="stripe item {% cycle  'primary', 'deep', 'neutral', 'neutral' %} container--{% cycle 'right', 'center', 'left' %} {{ presentation.grid-size }}">
+                <h2><a href="{{ presentation.url }}">{{ presentation.title }}</a></h3>
+                <div class="description">
+                    <p>{{ presentation.description }}</p>
+                    <a href="{{ presentation.url }}" title="{{ presentation.title }}">Read More &raquo;</a>
+                </div>
+            </article>
+        {% endfor %}
+</main>
+   
