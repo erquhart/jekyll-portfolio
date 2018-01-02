@@ -15,7 +15,7 @@
             <h4>Get in Touch</h4>
             <p>If you're interested in getting in touch with me, you can find me on <a href="http://twitter.com/brob/">Twitter as @brob</a> and on <a href="http://linkedin.com/in/bryanlrobinson/">LinkedIn</a>.</p>
             <p>If social media isn't really your thing, you can fill out this quick form.</p>
-            <form netlify name="footer-form" action="/thanks/">
+            <form netlify netlify-honeypot="bot_capture" name="footer-form" action="/thanks/">
                 <label for="full_name">Full Name</label>
                 <input type="text" name="full_name" id="full_name">
 
@@ -26,7 +26,9 @@
                 <textarea id="message" name="message" rows="4" cols="80"></textarea>
                 
                 <input type="hidden" name="page" id="page" value="{{ page.url }}">
-
+                <div style="display: none;">
+                    <label for="bot_capture">Don't fill this out</label><input name="bot_capture" type="text">
+                </div>
                 <input type="submit" value="Send Email">
             </form>
         </section>
