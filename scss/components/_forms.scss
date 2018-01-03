@@ -12,6 +12,9 @@ label {
     color: $color-dark-gray;
     display: block;
 }
+fieldset {
+    margin-bottom: .75rem;
+}
 
 input[type="submit"] {
     display: block;
@@ -22,6 +25,7 @@ input[type="submit"] {
     border: 0;
     cursor: pointer;
     transition: .3s ease-out;
+    -webkit-appearance: none;
     &:hover {
         background-color: darken($color-brand, 15%);
     }

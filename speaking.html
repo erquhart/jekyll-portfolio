@@ -6,54 +6,24 @@ comments: 'off'
 baseLayout: container--full
 ---
 
-<style>
-
-    .speaking-grid {
-        grid-row: 1;
-        grid-column: 1 / 5;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-        grid-gap: 1vw;
-    }
-
-    .speaking-contact {
-        grid-row: 1;
-        grid-column: 5 / 7;
-        position: sticky;
-        top: 10px;
-        align-self: start;
-    }
-    @media (max-width: 725px) {
-        .speaking-contact {
-            position: static;
-        }
-    }
-    @media (max-width: 725px) {
-        .container--full {
-            display: block;
-        }
-    }
-</style>
-
-
-
 <form class="speaking-contact" netlify netlify-honeypot="bot_capture" name="speaking" action="/thanks/">
     <h2>Invite me to speak</h2>
-    <label for="full_name">Full Name *</label>
+    <label for="full_name">What should I call you? *</label>
     <input type="text" required name="full_name" id="full_name">
 
-    <label for="__replyto">Email Address *</label>
+    <label for="__replyto">What's your email address? *</label>
     <input type="email" required name="__replyto" id="__replyto">
 
-    <label for="organization">Conference or Company</label>
+    <label for="organization">What conference or company are you with?</label>
     <input type="text" name="organization" id="organization">
 
     <fieldset>
-        <legend>Which Presentation?</legend>
+        <legend>What should I present?</legend>
         {% for presentation in site.presentations %}<label for="{{ presentation.title | slugify }}"><input type="checkbox" name="{{ presentation.title | slugify }}" id="{{ presentation.title | slugify }}" value="{{ presentation.title }}"> {{ presentation.title }}</label> {% endfor %}
+        <label for="something-special"><input type="checkbox" name="something-special" id="something-special" value="Special"> Something Special</label>
     </fieldset>
 
-    <label for="message">Message *</label>
+    <label for="message">What else should I know? *</label>
     <textarea id="message" required name="message" rows="4" cols="80"></textarea>
     
     <input type="hidden" name="page" id="page" value="{{ page.url }}">

@@ -2,6 +2,7 @@
     max-width: 768px;
     @media (min-width: 550px) {
         display: grid;
+        grid-column-gap: .75rem;
         @supports (grid-auto-rows: 1px) {
             max-width: 100%;
         }
