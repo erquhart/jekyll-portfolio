@@ -27,8 +27,7 @@
         @media (min-width: 450px) {
             display: grid;
             grid-auto-flow: dense;
-            grid-auto-rows: minmax(3vh, 1fr);
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(6, 1fr);
             grid-gap: calc(.5rem + .5vw);
         }
 
@@ -88,7 +87,7 @@ $stripe-background-color: $color-light;
 $stripe-background-secondary-color: darken($color-neutral, 10%);
 $stripe-foreground-color: $color-brand;
 $stripe-foreground-secondary-color: $color-accent;
-$stripe-padding: calc(1rem + 2vw) 10%;
+$stripe-padding: calc(1rem + 2vw) 2vw;
 $stripe-font-vw: 1vw;
 $stripe-description-font-size: .8rem;
 $stripe-headline-font-size: 1.8rem;
