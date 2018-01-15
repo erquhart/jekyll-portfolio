@@ -2,7 +2,7 @@
 title: Feature Queries Experiments
 layout: interior
 description: Two examples of Feature Queries using CSS Grid Layout
-grid-size: small
+grid-size: medium
 ---
 
 <div class="">

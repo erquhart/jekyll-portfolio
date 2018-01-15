@@ -3,7 +3,7 @@ title: Demonstrations from Post-Modern CSS
 layout: post
 description:
 permalink: /post-modern-examples/
-grid-size: small
+grid-size: medium
 ---
 
 <style>

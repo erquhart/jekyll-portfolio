@@ -2,7 +2,7 @@
 title: Flexbox layouts
 layout: interior
 description: A CodePen collection for learning simple examples of Flexbox Layout
-grid-size: small
+grid-size: medium
 ---
 
 <div class="">
