@@ -2,7 +2,7 @@
 title: CSS Grid Layout
 layout: interior
 description: A few looks at how to use CSS Grid Layout.
-grid-size: medium
+grid-size: super
 ---
 
 <div class="">

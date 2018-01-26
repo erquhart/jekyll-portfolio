@@ -8,7 +8,7 @@ $border: $color-accent;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (min-width: 500px) {
+    @media (min-width: 630px) {
         justify-content: flex-end;
     }
 

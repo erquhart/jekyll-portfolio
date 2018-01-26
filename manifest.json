@@ -1,0 +1,9 @@
+{
+    "name": "Bryan Robinson's Blog",
+    "short_name": "@brob",
+    "theme_color": "#235980",
+    "background_color": "#235980",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/"
+  }

@@ -67,7 +67,7 @@
             justify-content: center;
             text-align: center;
             background-color: $color-light;
-            color: $color-brand;
+            color: darken($color-brand, 15%);
             font-weight: 400;
             font-size: 1.2rem;
             padding: .5rem;

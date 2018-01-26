@@ -1,5 +1,5 @@
 ---
-title: A CSS-Only Mobile Off Canvas Navigation
+title: How To&#58; A CSS-Only Mobile Off Canvas Navigation
 categories:
 - CSS Can Do What
 - Development
@@ -7,7 +7,7 @@ categories:
 - CSS
 - Tutorial
 layout: post
-description: A tutorial on creating a mobile off-canvas navigation with only CSS and HTML.
+description: Mobile navigation and the "hamburger nav" pattern aren't going away. In this tutorial, I'll walk you through creating a mobile off-canvas navigation with only CSS and HTML.
 featuredImg: /images/blog/mobile-nav/mobile-nav-static.png
 featuredLarge: True
 baseLayout: container--right

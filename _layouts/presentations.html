@@ -1,8 +1,36 @@
 {% include header.html %}
+{% include interior-content-head.html %}
 
-    <main class="interior">
-        {% include interior-content-head.html %}
-        {{ content | markdownify }}
+    <main class="container page-indent {{ page.baseLayout }}">
+        <div class="content">
+            {{ content | markdownify }}
+       </div>
+        <form class="speaking-contact speaking-contact--detail" netlify netlify-honeypot="bot_capture" name="speaking-detail" action="/thanks/">
+            <h2>Invite me to give this talk</h2>
+            <label for="full_name">What should I call you? *</label>
+            <input type="text" required name="full_name" id="full_name">
+
+            <label for="__replyto">What's your email address? *</label>
+            <input type="email" required name="__replyto" id="__replyto">
+
+            <label for="organization">What conference or company are you with?</label>
+            <input type="text" name="organization" id="organization">
+
+            <label for="message">What else should I know?</label>
+            <textarea id="message" name="message" rows="4" cols="80"></textarea>
+            
+            <input type="hidden" name="page" id="page" value="{{ page.url }}">
+            <div style="display: none;">
+                <label for="bot_capture">Don't fill this out</label><input name="bot_capture" type="text">
+            </div>
+            <input type="submit" value="Start the Conversation">
+        </form>
+
+   
+  
     </main>
+
+
+
 
 {% include footer.html %}
